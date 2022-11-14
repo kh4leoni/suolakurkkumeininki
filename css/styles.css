@@ -1,0 +1,250 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 0.87em;
+
+}
+
+.wrapper .left,
+.wrapper .right {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+.wrapper .right .navb {
+  position: absolute;
+  top: 2.8em;
+  z-index: 12;
+  
+  
+  
+}
+
+.wrapper .left .header {
+  z-index: 11;
+  position: absolute;
+  left: 2em;
+  top: 0.62em;
+  font-size: 0.75em;
+  font-weight: 400;
+  font-family: 'Shadows Into Light', cursive;
+  
+}
+
+.wrapper .right .navb .navi-link {
+  text-decoration: none;
+  margin: 0 1.25em;
+  padding: 1em 1em;
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 1.56em;
+  color: white;
+  
+}
+
+.wrapper .right {
+  background: #2BAE66FF;  
+}
+
+.wrapper .reseptit {
+  height: auto;
+}
+
+.wrapper .image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.25s ease all;
+}
+
+.jar {
+  background-image: url("../images/jar1.jpeg");
+}
+
+.pickle {
+  /* background-image: url("../images/cat.jpg"); */
+}
+
+.pickle-fork {
+  background-image: url('../images/pickle-fork.jpeg');
+}
+
+.many-pickles2 {
+  background-image: url('../images/small-many-pickles.png');
+
+}
+
+.wrapper .caption {
+  position: relative;
+  z-index: 10;
+  color: white;
+  text-align: center;
+}
+
+.wrapper .left .caption {
+  width: 50%;
+  text-align: center;
+  
+  
+}
+
+.mt-100 {
+  margin-top: 6.25em;
+}
+
+.mt-16 {
+  margin-top: 1em;
+}
+
+.wrapper .caption h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  
+}
+
+.wrapper .left .caption h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+ 
+}
+
+.wrapper .caption .button {
+  background-color: rgba(0,0,0,0.6);
+  color: #FCF6F5FF;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.25s ease all;  
+  font-size: 1.25em;
+  overflow: hidden;
+  
+  border-radius: 2em;
+  
+  word-wrap: break-word;
+  hyphens: auto;
+  
+  
+}
+
+.wrapper .right .navb .navi-link:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  transition: 0.3s ease all; 
+  padding: 1em 2em;
+  border-radius: 1.56em;
+
+}
+
+.card {
+  
+  background-color: #FCF6F5FF;
+  text-overflow: ellipsis;
+  transition: 0.16s ease all; 
+  color: black;
+  border: none;
+  
+}
+
+
+.wrapper .caption .button:hover {
+  background: #ffde46;
+  color: black;
+
+}
+
+.wrapper .side::before {
+  background: linear-gradient(0deg, rgba(0,0,0,0.6643032212885154) 0%, rgba(0,0,0,0.01724439775910369) 50%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+  display: block;
+}
+
+.wrapper .left:hover .image,
+.wrapper .right:hover .image {
+  transform: scale(1.2);
+}
+
+.btn {
+  background-color: #2BAE66FF;
+  border: none;
+  border-radius: 25px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  z-index: 13;
+
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 13;
+}
+
+.col-md-6 {
+  margin: 10px 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 1.3px solid rgba(255,255,255,0.7643032212885154);
+}
+
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (min-width: 988px) {
+  .wrapper {
+    display: flex;
+  }
+  .wrapper .left,
+  .wrapper .right {
+    width: 50%;
+    height: 100vh;
+    
+  }
+
+
+
+
+}
+
+@media only screen and (max-height: 580px) {
+  /* place here CSS for when the screen is less than 500px tall */
+.navi-link {
+  visibility: hidden;
+}
+}
+
+
