@@ -223,8 +223,31 @@ body {
   .toggle-button {
     display: flex;
   }
-  .navi-link {
-    display: none;
+  .nav-link-div {
+    display: none;    
+    flex-direction: column;
+    
+
+  }
+
+
+
+  .flexnav {
+    position: absolute;
+    right: 5px;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .flexnav a {
+    text-align: center;
+  }
+  .nav-link-div.active {
+    display:flex
   }
 }
 
