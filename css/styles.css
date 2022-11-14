@@ -1,8 +1,7 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 0.87em;
-
 }
 
 .wrapper .left,
@@ -14,16 +13,12 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  
 }
 
 .wrapper .right .navb {
   position: absolute;
   top: 2.8em;
   z-index: 12;
-  
-  
-  
 }
 
 .wrapper .left .header {
@@ -33,8 +28,7 @@ body {
   top: 0.62em;
   font-size: 0.75em;
   font-weight: 400;
-  font-family: 'Shadows Into Light', cursive;
-  
+  font-family: "Shadows Into Light", cursive;
 }
 
 .wrapper .right .navb .navi-link {
@@ -47,11 +41,10 @@ body {
   text-transform: uppercase;
   border-radius: 1.56em;
   color: white;
-  
 }
 
 .wrapper .right {
-  background: #2BAE66FF;  
+  background: #2bae66ff;
 }
 
 .wrapper .reseptit {
@@ -78,12 +71,11 @@ body {
 }
 
 .pickle-fork {
-  background-image: url('../images/pickle-fork.jpeg');
+  background-image: url("../images/pickle-fork.jpeg");
 }
 
 .many-pickles2 {
-  background-image: url('../images/small-many-pickles.png');
-
+  background-image: url("../images/small-many-pickles.png");
 }
 
 .wrapper .caption {
@@ -96,8 +88,6 @@ body {
 .wrapper .left .caption {
   width: 50%;
   text-align: center;
-  
-  
 }
 
 .mt-100 {
@@ -110,64 +100,59 @@ body {
 
 .wrapper .caption h1 {
   text-transform: uppercase;
-  letter-spacing: 0.10em;
-  
+  letter-spacing: 0.1em;
 }
 
 .wrapper .left .caption h1 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
- 
 }
 
 .wrapper .caption .button {
-  background-color: rgba(0,0,0,0.6);
-  color: #FCF6F5FF;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fcf6f5ff;
   padding: 1em 2em;
   text-decoration: none;
   font-weight: 400;
   font-size: 1em;
   letter-spacing: 0.05em;
-  transition: 0.25s ease all;  
+  transition: 0.25s ease all;
   font-size: 1.25em;
   overflow: hidden;
-  
+
   border-radius: 2em;
-  
+
   word-wrap: break-word;
   hyphens: auto;
-  
-  
 }
 
 .wrapper .right .navb .navi-link:hover {
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   color: white;
-  transition: 0.3s ease all; 
+  transition: 0.3s ease all;
   padding: 1em 2em;
   border-radius: 1.56em;
-
 }
 
 .card {
-  
-  background-color: #FCF6F5FF;
+  background-color: #fcf6f5ff;
   text-overflow: ellipsis;
-  transition: 0.16s ease all; 
+  transition: 0.16s ease all;
   color: black;
   border: none;
-  
 }
-
 
 .wrapper .caption .button:hover {
   background: #ffde46;
   color: black;
-
 }
 
 .wrapper .side::before {
-  background: linear-gradient(0deg, rgba(0,0,0,0.6643032212885154) 0%, rgba(0,0,0,0.01724439775910369) 50%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6643032212885154) 0%,
+    rgba(0, 0, 0, 0.01724439775910369) 50%
+  );
   width: 100%;
   height: 100%;
   position: absolute;
@@ -184,28 +169,27 @@ body {
 }
 
 .btn {
-  background-color: #2BAE66FF;
+  background-color: #2bae66ff;
   border: none;
   border-radius: 25px;
 }
 
 .toggle-button {
   position: absolute;
-  top: 0.75em;
+  top: 1.5em;
   right: 1em;
-  display: none;
+  display: hidden;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
-  height: 21px;
+  height: 30px;
   z-index: 13;
-
 }
 
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
   z-index: 13;
 }
@@ -216,7 +200,7 @@ body {
 
 .card:hover {
   transform: scale(1.05);
-  border: 1.3px solid rgba(255,255,255,0.7643032212885154);
+  border: 1.3px solid rgba(255, 255, 255, 0.7643032212885154);
 }
 
 .btn:hover {
@@ -232,19 +216,25 @@ body {
   .wrapper .right {
     width: 50%;
     height: 100vh;
-    
+  }
+}
+
+@media screen and (max-width: 988px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navi-link {
+    display: none;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  /* place here CSS for when the screen is less than 500px tall */
+  .navi-link {
+    visibility: hidden;
   }
 
-
-
-
+  .toggle-button {
+    display: flex;
+  }
 }
-
-@media only screen and (max-height: 580px) {
-  /* place here CSS for when the screen is less than 500px tall */
-.navi-link {
-  visibility: hidden;
-}
-}
-
-
