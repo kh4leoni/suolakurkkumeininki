@@ -67,10 +67,6 @@ body {
   background-image: url("../images/jar1.jpeg");
 }
 
-.pickle {
-  /* background-image: url("../images/cat.jpg"); */
-}
-
 .pickle-fork {
   background-image: url("../images/pickle-fork.jpeg");
 }
@@ -105,7 +101,7 @@ body {
 }
 
 .wrapper .right .caption {
-  padding: 0 30px;
+  padding: 0 15px;
 }
 
 .wrapper .left .caption h1 {
@@ -114,15 +110,35 @@ body {
 }
 
 .padding-etusivu {
-  margin-bottom: 42px;
+  margin-bottom: 10px;
+}
+
+.pen-icon-link {
+  text-decoration: none;
+  color: white;
+}
+
+.pen-icon-link:hover {
+  color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.form-control {
+  width: 70%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.form-control:focus {
+  border-color: #2bae66ff;
+  box-shadow: inset 0 1px 1px #fcf6f5ff, 0 0 8px #2bae66ff;
 }
 
 
-
 .wrapper .caption .button {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #fcf6f5ff;
-  padding: 1em 2em;
+  padding: 55px;
   text-decoration: none;
   font-weight: 400;
   font-size: 1em;
@@ -130,9 +146,7 @@ body {
   transition: 0.25s ease all;
   font-size: 1.25em;
   overflow: hidden;
-
-  border-radius: 2em;
-
+  border-radius: 100px;
   word-wrap: break-word;
   hyphens: auto;
 }
@@ -154,8 +168,9 @@ body {
 }
 
 .wrapper .caption .button:hover {
-  background: #ffde46;
-  color: black;
+  /* background: #ffde46;
+  color: black; */
+  transform: scale(1.1);
 }
 
 .wrapper .side::before {
@@ -190,6 +205,10 @@ body {
   top: 0.8em;
   left: 0.75em;
   font-size: 28px;
+}
+
+.cards-wrapper {
+  display: flex;
 }
 
 .toggle-button {
@@ -245,9 +264,9 @@ body {
     display: flex;
   }
   .nav-link-div {
-    display: none;    
+    display: none;
     flex-direction: column;
-    
+
 
   }
 
@@ -281,4 +300,8 @@ body {
   .toggle-button {
     display: flex;
   }
+}
+
+.hide {
+  display: none
 }
