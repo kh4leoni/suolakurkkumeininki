@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/kurkku-icon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Montserrat:wght@300;600&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Uusi resepti</title>
+  </head>
+  <body>
+    <div class="new-recipe-container">
+      <h1 class="new-recipe-sktk">SKTK</h1>      
+      <header class="new-recipe-hdr">
+        <h1>Uusi resepti</h1>
+      </header>
+      <div class="new-navi-div">
+        <a class="navi-link" href="index.html">Etusivu</a>
+        <a class="navi-link" href="reseptit.html">Reseptit</a>
+        <a class="navi-link" href="arvostelut.html">Arvostelut</a>
+      </div>
+      <div class="content">
+        <input
+          class="new-recipe-nick form-control"
+          type="text"
+          class="text"
+          placeholder="Nimimerkki"
+        />
+        <input
+          class="recipe-title form-control"
+          type="text"
+          class="text"
+          placeholder="Reseptin nimi"
+        />
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="3"
+          placeholder="Kirjoita reseptisi tähän..."
+        ></textarea>
+        <a href="#" class="btn btn-primary new-recipe-btn">Lähetä</a>
+      </div>
+    </div>
+  </body>
+</html>
