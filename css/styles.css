@@ -287,6 +287,22 @@ body {
 
   .new-navi-div {
     visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5724439775910369);
+    padding: 10px;
+    position: absolute;
+    margin-top: 20px;
+    right: 4px;
+    border-radius: 10px;
+  }
+
+  .new-navi-div a {
+    margin: 6px 0;
+  }
+
+  .new-navi-div.active {
+    visibility:visible;
   }
 }
 
