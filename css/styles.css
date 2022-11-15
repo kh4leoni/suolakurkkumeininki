@@ -75,6 +75,10 @@ body {
   background-image: url("../images/small-many-pickles.png");
 }
 
+.many-pickles {
+  background-image: url('../images/many-pickles.jpg');
+}
+
 .wrapper .caption {
   position: relative;
   z-index: 10;
@@ -144,7 +148,7 @@ body {
   transition: 0.25s ease all;
   font-size: 1.25em;
   overflow: hidden;
-  border-radius: 100px;
+  border-radius: 20px;
   word-wrap: break-word;
   hyphens: auto;
 }
@@ -316,7 +320,7 @@ body {
 }
 
 #exampleFormControlTextarea1 {
-  height: 500px;
+  height: 400px;
   width: 50%;
   margin-top: 15px;
   z-index: 2;
@@ -337,13 +341,15 @@ body {
   text-transform: uppercase;
   display: inline-block;
   z-index: 3;
+  letter-spacing: 1.6px;
 }
 
 .new-recipe-hdr {
   background: rgba(43,174,102, 0.78);
   padding: 35px 0;
   text-align: center;
-  z-index: 4;
+  position: relative;
+  z-index: 3;
   
 }
 
@@ -357,18 +363,24 @@ body {
 
 }
 .new-recipe-container {
-  height: 100vh;
+  height: auto;
   width: 100%;
-  background-image: url('../images/many-pickles.jpeg');
   background-color: rgba(43,174,102, 0.88);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   position: absolute;
   top: 0;
   left: 0;
+  background-image: url('../images/many-pickles.jpg');
+  
+}
+
+.new-recipe-container .image2 {
 
 }
+
+
 
 .new-recipe-container::before {
   background: rgba(0, 0, 0, 0.2724439775910369);
@@ -383,7 +395,7 @@ body {
 }
 
 .new-recipe-btn {
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 15px;
   z-index: 1;
   text-transform: uppercase;
@@ -407,7 +419,7 @@ body {
   top: 40px;
   right: 30px;
   display: flex;  
-  z-index: 2;
+  z-index: 5;
 }
 
 .new-navi-div a {
@@ -426,5 +438,10 @@ body {
   left: 20px;
   top: 15px;
   font-family: "Shadows Into Light", cursive;
-  z-index: 2;
+  z-index: 5;
+  color: white;
+}
+
+.padding-span {
+  margin-top: 50px
 }
