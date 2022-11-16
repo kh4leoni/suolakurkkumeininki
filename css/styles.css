@@ -144,7 +144,7 @@ body {
 .wrapper .caption .button {
   background-color: rgba(0, 0, 0, 0.1);
   color: #fcf6f5ff;
-  padding: 55px;
+  padding: 15px;
   text-decoration: none;
   font-weight: 400;
   font-size: 1em;
@@ -152,7 +152,7 @@ body {
   transition: 0.25s ease all;
   font-size: 1.25em;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 0px;
   word-wrap: break-word;
   hyphens: auto;
 }
@@ -464,8 +464,8 @@ body {
   visibility: visible;
 }
 
-@media screen and (max-width: 1400px) {
-  .wrapper .caption .button  {
+@media screen and (max-width: 1600px) {
+  .wrapper .caption .button {
     background: none;
   }
 }
@@ -545,7 +545,7 @@ body {
   .kyna-icon {
     left: 100px;
   }
-  .wrapper .caption .button  {
+  .wrapper .caption .button {
     background: none;
   }
 }
@@ -561,8 +561,8 @@ body {
     visibility: visible;
     z-index: 5;
     position: fixed;
-    right: 30px;
-    bottom: 20px;
+    right: 45px;
+    bottom: 30px;
     font-size: 34px;
     opacity: 50%;
     text-decoration: none;
@@ -570,15 +570,11 @@ body {
   }
 
   .carousel-control-prev {
-
     left: 70px;
-   
   }
-  
-  .carousel-control-next {
 
+  .carousel-control-next {
     right: 70px;
-    
   }
 
   .search-button {
@@ -588,14 +584,13 @@ body {
     text-align: center;
   }
 
- .search-field {
+  .search-field {
     display: none;
     position: absolute;
-    top: 130px;
+    top: 100px;
     right: 0;
     width: 95%;
-    z-index: 50;  
-
+    z-index: 50;
   }
 
   .wrapper .caption .button:hover {
@@ -606,15 +601,16 @@ body {
     visibility: hidden;
     position: absolute;
     right: -40px;
-    top: 123px;
+    top: 93px;
     z-index: 15;
     font-size: 14px;
     background-color: #2bae66ff;
     opacity: 60%;
-    
   }
 
-
+  #search-btn-submit:hover {
+    background-color: rgba(0, 0, 0, 0.7724439775910369);
+  }
 
   .search-field.active {
     display: flex;
@@ -623,7 +619,6 @@ body {
   #search-btn-submit.active {
     visibility: visible;
   }
-
 }
 
 @media screen and (max-height: 650px) {
