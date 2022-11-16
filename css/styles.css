@@ -80,7 +80,7 @@ body {
 }
 
 .many-pickles {
-  background-image: url('../images/many-pickles.jpeg')
+  background-image: url("../images/many-pickles.jpeg");
 }
 
 .wrapper .caption {
@@ -241,11 +241,8 @@ body {
   margin: 10px 0;
 }
 
-
-
 .card:hover {
   transform: scale(1.01);
-  
 }
 
 .btn:hover {
@@ -288,13 +285,9 @@ body {
   padding: 20px;
   resize: none;
   background-color: rgba(255, 255, 255, 0.96);
-
-
-
 }
 
 .new-recipe-hdr h1 {
-
   text-align: center;
   margin: 0;
   color: white;
@@ -305,16 +298,12 @@ body {
 }
 
 .new-recipe-hdr {
-  background: rgba(43,174,102, 0.88);
+  background: rgba(43, 174, 102, 0.88);
   padding: 35px 0;
   text-align: center;
   position: relative;
   z-index: 3;
-
 }
-
-
-
 
 .content {
   margin-top: 30px;
@@ -323,7 +312,6 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
-
 }
 .new-recipe-container {
   height: 100vh;
@@ -336,7 +324,6 @@ body {
   top: 0;
   left: 0;
   background-image: url('../images/many-pickles2.jpeg'); */
-
 }
 
 .image2 {
@@ -347,11 +334,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-
 }
-
-
-
 
 .new-recipe-container::before {
   background: rgba(0, 0, 0, 0.2724439775910369);
@@ -382,7 +365,6 @@ body {
   background-color: #2bae66ff;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 .new-navi-div {
@@ -403,7 +385,6 @@ body {
   letter-spacing: 1.7px;
   z-index: 3;
   border-radius: 2.5em;
-  
 }
 
 .new-navi-div a:hover {
@@ -424,7 +405,7 @@ body {
 }
 
 .padding-span {
-  margin-top: 50px
+  margin-top: 50px;
 }
 
 .logo {
@@ -442,9 +423,9 @@ body {
 }
 
 .new-recipe-sktk .logo {
-  color:white;
+  color: white;
   font-size: 24px;
-  font-weight: 300;  
+  font-weight: 300;
 }
 
 .new-recipe-sktk .logo:hover {
@@ -456,32 +437,21 @@ body {
   font-size: 10px;
 }
 
-
-.img-wrapper {
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center center;
+.row {
+  flex-wrap: nowrap;
 }
 
-  .row{
-    flex-wrap: nowrap;
-    
-    }
+.carousel-control-prev {
+  position: absolute;
+  height: 400px;
+  top: 100px;
+}
 
-    .carousel-control-prev {
-      position: absolute;
-      height: 400px;
-      top: 100px;
-    }
-
-    .carousel-control-next {
-      position: absolute;
-      height: 400px;
-      top: 100px;
-    }
-
-
+.carousel-control-next {
+  position: absolute;
+  height: 400px;
+  top: 100px;
+}
 
 @media screen and (min-width: 988px) {
   .wrapper {
@@ -495,12 +465,26 @@ body {
 }
 
 @media screen and (max-width: 988px) {
-  .toggle-button {
+  .reseptit .toggle-button {
     display: flex;
+    right: 100px;
   }
   .nav-link-div {
     display: none;
     flex-direction: column;
+  }
+
+  .arvostelut .toggle-button {
+    display: flex;
+    right: 100px;
+  }
+
+  .etusivu .toggle-button {
+    display: flex;
+  }
+
+  .new-recipe-container .toggle-button {
+    top: 38px;
   }
 
   .flexnav {
@@ -538,33 +522,44 @@ body {
   }
 
   .new-navi-div.active {
-    visibility:visible;
+    visibility: visible;
   }
 
+  .kyna-icon {
+    left: 100px;
+  }
 }
 
-
-
 @media screen and (max-width: 700px) {
-  .new-recipe-sktk .logo{
+  .new-recipe-sktk .logo {
     font-size: 14px;
   }
 
-  .up-icon, .up-icon:hover, .up-icon:visited {
+  .up-icon,
+  .up-icon:hover,
+  .up-icon:visited {
     visibility: visible;
     z-index: 5;
     position: fixed;
-    right: 10px;
-    bottom: 15px;
+    right: 30px;
+    bottom: 20px;
     font-size: 34px;
     opacity: 50%;
     text-decoration: none;
     color: black;
-
   }
 
+  .carousel-control-prev {
 
+    left: 70px;
+   
+  }
+  
+  .carousel-control-next {
 
+    right: 70px;
+    
+  }
 }
 
 @media screen and (max-height: 650px) {
@@ -617,4 +612,3 @@ body {
     margin-top: 20px;
   }
 }
-
