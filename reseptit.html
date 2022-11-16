@@ -40,17 +40,18 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="left side">
+      <div class="left side haku">
         <div class="header">
           <h1><a class="logo" href="./index.html">SKTK</a></h1>
         </div>
         <div class="image pickle-fork"></div>
         <div class="caption">
-        <form action="" class="button">
+        <div class="button">
           
-          <input type="search" id="search" class="form-control" placeholder="Etsi reseptejä..">
-          <button class="btn btn-primary search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+          <input type="search" id="search" class="form-control search-field" placeholder="Etsi reseptejä..">
+          <button class="btn btn-primary search-button" id="search-btn-submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="btn btn-primary search-button" id="search-button"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+        </div>
         </div>
       </div>
 
@@ -261,6 +262,7 @@
     </div>
     <script src="./app.js"></script>
     <script src="./script.js"></script>
+    <!-- <script src="./searchbar.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>    
   </body>
 </html>

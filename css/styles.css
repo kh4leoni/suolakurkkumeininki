@@ -454,8 +454,20 @@ body {
 }
 
 .search-button {
+  visibility: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+#search-btn-submit {
+  background-color: #2bae66ff;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1400px) {
+  .wrapper .caption .button  {
+    background: none;
+  }
 }
 
 @media screen and (min-width: 988px) {
@@ -533,6 +545,9 @@ body {
   .kyna-icon {
     left: 100px;
   }
+  .wrapper .caption .button  {
+    background: none;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -565,6 +580,50 @@ body {
     right: 70px;
     
   }
+
+  .search-button {
+    visibility: visible;
+    opacity: 55%;
+    font-size: 25px;
+    text-align: center;
+  }
+
+ .search-field {
+    display: none;
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 95%;
+    z-index: 50;  
+
+  }
+
+  .wrapper .caption .button:hover {
+    transform: none;
+  }
+
+  #search-btn-submit {
+    visibility: hidden;
+    position: absolute;
+    right: -40px;
+    top: 123px;
+    z-index: 15;
+    font-size: 14px;
+    background-color: #2bae66ff;
+    opacity: 60%;
+    
+  }
+
+
+
+  .search-field.active {
+    display: flex;
+  }
+
+  #search-btn-submit.active {
+    visibility: visible;
+  }
+
 }
 
 @media screen and (max-height: 650px) {
