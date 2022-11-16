@@ -76,7 +76,7 @@ body {
 }
 
 .many-pickles {
-  background-image: url('../images/many-pickles.jpg');
+  background-image: url('../images/many-pickles.jpeg')
 }
 
 .wrapper .caption {
@@ -306,6 +306,12 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .new-recipe-sktk {
+    visibility: hidden;
+  }
+}
+
 @media screen and (max-height: 650px) {
   /* place here CSS for when the screen is less than 500px tall */
   /* .navi-link {
@@ -314,6 +320,46 @@ body {
 
   .toggle-button {
     display: flex;
+  }
+
+  .navi-link-div {
+    visibility: hidden;
+  }
+
+  .new-navi-div {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5724439775910369);
+    padding: 10px;
+    position: absolute;
+    margin-top: 20px;
+    right: 4px;
+    border-radius: 10px;
+  }
+
+  .new-navi-div.active {
+    visibility: visible;
+  }
+
+  .nav-link-div {
+    display: none;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  .nav-link-div.active {
+    display: flex;
+  }
+
+  .flexnav {
+    position: absolute;
+    right: 5px;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    margin-top: 20px;
   }
 }
 
@@ -332,7 +378,7 @@ body {
 .recipe-title {
   display: block;
   width: 40%;
-  
+
   margin-top: 15px;
   text-align: center;
   z-index: 1;
@@ -348,13 +394,13 @@ body {
   padding: 20px;
   resize: none;
   background-color: rgba(255, 255, 255, 0.96);
-  
-  
+
+
 
 }
 
 .new-recipe-hdr h1 {
-  
+
   text-align: center;
   margin: 0;
   color: white;
@@ -365,12 +411,12 @@ body {
 }
 
 .new-recipe-hdr {
-  background: rgba(43,174,102, 0.78);
+  background: rgba(43,174,102, 0.88);
   padding: 35px 0;
   text-align: center;
   position: relative;
   z-index: 3;
-  
+
 }
 
 .content {
@@ -383,22 +429,30 @@ body {
 
 }
 .new-recipe-container {
-  height: auto;
+  height: 100vh;
   width: 100%;
-  background-color: rgba(43,174,102, 0.88);
+  /* background-color: rgba(43,174,102, 0.88);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url('../images/many-pickles.jpg');
-  
-}
-
-.new-recipe-container .image2 {
+  background-image: url('../images/many-pickles2.jpeg'); */
 
 }
+
+.image2 {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
 
 
 
@@ -431,26 +485,36 @@ body {
   background-color: #2bae66ff;
   justify-content: space-evenly;
   align-items: center;
-  
+
 }
 
 .new-navi-div {
   position: absolute;
-  top: 40px;
+  top: 24px;
   right: 30px;
-  display: flex;  
+  display: flex;
   z-index: 5;
 }
 
 .new-navi-div a {
   text-decoration: none;
-  margin-left: 20px;
-  margin-right: 10px;
+  /* margin-left: 20px; */
+  padding: 1em 1.5em;
   text-transform: uppercase;
   color: white;
   font-weight: 600;
   letter-spacing: 1.7px;
   z-index: 3;
+  border-radius: 2.5em;
+  
+}
+
+.new-navi-div a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  transition: 0.3s ease all;
+  padding: 1em 2.5em;
+  border-radius: 2.56em;
 }
 
 .new-recipe-sktk {
@@ -465,3 +529,23 @@ body {
 .padding-span {
   margin-top: 50px
 }
+
+.logo {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover {
+  color: black;
+}
+
+.new-recipe-sktk .logo {
+  color:white;
+  font-size: 24px;
+  font-weight: 300;  
+}
+
+.new-recipe-sktk .logo:hover {
+  color: white;
+}
+
