@@ -558,6 +558,9 @@ body {
     display: none;
     flex-direction: column;
   }
+  .wrapper .right.arvostelut {
+    padding: calc(25vh - 200px);
+  }
 
   .wrapper .left.arvostelut {
     height: 50vh;
@@ -652,6 +655,14 @@ body {
   .small-screen-margin {
     margin-left: 15px;
     
+  }
+
+  .arvostelut .toggle-button {
+    right: 15px
+  }
+
+  .arvostelut .caption h1 {
+    margin-bottom: 7px;
   }
 
 }
