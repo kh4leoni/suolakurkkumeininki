@@ -15,6 +15,19 @@ body {
   overflow: hidden;
 }
 
+
+.wrapper .right.arvostelut {
+  overflow:visible;
+  height: auto;
+  padding-top: calc(25vh - 100px);
+}
+
+.wrapper .left.arvostelut {
+  height: auto;
+}
+
+
+
 .wrapper .right .navb {
   position: absolute;
   top: 2.8em;
@@ -83,6 +96,10 @@ body {
   background-image: url("../images/many-pickles.jpeg");
 }
 
+.kurkku {
+  background-image: url('../images/putoavat-kurkut.jpg');
+}
+
 .wrapper .caption {
   position: relative;
   z-index: 10;
@@ -119,6 +136,53 @@ body {
 
 .padding-etusivu {
   margin-bottom: 10px;
+}
+
+#panel {
+  transition: 0.5s;
+  padding-top: 10px;
+}
+
+.arvostelut .progress-bar {
+  background-color: #2bae66ff;
+}
+
+#profile {
+  height: 400px;
+  background-color: white;
+  box-shadow: 10px 10px 20px -10px rgba(158, 158, 158, 0.644);
+  border-radius: 30px;
+  transform: scale(0);
+  transition: 0.5s;
+  position: fixed;
+  top: 310px;
+  left: 100px;
+  width: 40%;
+  opacity: 0;
+  color: black;
+  z-index: 20;
+}
+
+.close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.arvostelut .card {
+  transition: 0.5s;
+  transform: translate((0xp, 0px));
+  
+}
+
+.arvostelut .card:hover {
+  box-shadow: 10px 10px 40px -20px rgba(98, 98, 98);
+  transform: translate(-5px, -5px);
+}
+
+.search-formi {
+
+  position: absolute;
+  width: 100%;
 }
 
 .pen-icon-link {
@@ -200,6 +264,10 @@ body {
   transform: scale(1.2);
 }
 
+.wrapper .left.arvostelut:hover .image {
+  transform: scale(1.2);
+}
+
 .btn {
   background-color: #2bae66ff;
   border: none;
@@ -242,7 +310,7 @@ body {
 }
 
 .card:hover {
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
 }
 
 .btn:hover {
@@ -437,17 +505,17 @@ body {
   font-size: 10px;
 }
 
-.row {
+.reseptit .row {
   flex-wrap: nowrap;
 }
 
-.carousel-control-prev {
+.reseptit .carousel-control-prev {
   position: absolute;
   height: 400px;
   top: 100px;
 }
 
-.carousel-control-next {
+.reseptit .carousel-control-next {
   position: absolute;
   height: 400px;
   top: 100px;
@@ -489,6 +557,14 @@ body {
   .nav-link-div {
     display: none;
     flex-direction: column;
+  }
+
+  .wrapper .left.arvostelut {
+    height: 50vh;
+  }
+
+  .small-profile {
+    font-size: 10px;
   }
 
   .arvostelut .toggle-button {
@@ -569,11 +645,11 @@ body {
     color: black;
   }
 
-  .carousel-control-prev {
+  .reseptit .carousel-control-prev {
     left: 70px;
   }
 
-  .carousel-control-next {
+  .reseptit .carousel-control-next {
     right: 70px;
   }
 

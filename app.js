@@ -4,40 +4,35 @@ const newNavLink = document.getElementsByClassName("new-navi-div")[0];
 
 const searchButton = document.getElementById("search-button");
 const searchField = document.getElementsByClassName("search-field")[0];
-const submitSearchBtn = document.getElementById('search-btn-submit');
+const submitSearchBtn = document.getElementById("search-btn-submit");
 
 
 
 //Search bar
 
-
-
 //hamburger menu
-
-
-
+if (navLink || newNavLink) {
 openNavBar();
-
+}
 
 if (searchButton) {
-openSearchBar();
+  openSearchBar();
 }
 
 function openNavBar() {
-  menuButton.addEventListener('click', () => {
+  menuButton.addEventListener("click", () => {
     if (navLink) {
-      navLink.classList.toggle('active')
+      navLink.classList.toggle("active");
     } else if (newNavLink) {
-      newNavLink.classList.toggle('active');
+      newNavLink.classList.toggle("active");
     }
-  })
+  });
 }
 
 function openSearchBar() {
-  searchButton.addEventListener('click', () => {
-    searchField.classList.toggle('active');
+  searchButton.addEventListener("click", () => {
+    searchField.classList.toggle("active");
 
-    submitSearchBtn.classList.toggle('active');
-    
-  })
+    submitSearchBtn.classList.toggle("active");
+  });
 }
