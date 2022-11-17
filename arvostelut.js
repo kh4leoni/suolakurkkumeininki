@@ -30,7 +30,7 @@ data.forEach((item) => {
                   <h4 style="font-weight:600;font-size: 15px;"><i class="fa-solid fa-star text-warning mx-3"></i>${item.arvosana} / 5 </h4>
               </div>
               <p class="card-text">${item.tyyli}</p>
-              <button class="btn btn-primary w-100" onclick="profile(${item.id})">Suurenna</button>
+              <button class="btn btn-primary w-100 open-button" onclick="profile(${item.id})">Suurenna</button>
           </div>
       </div>
   </div>
@@ -55,12 +55,12 @@ function profile(id) {
   data.forEach((item) => {
       if (item.id === id) {
           let profile_div = `
-              <div class="w-100">
+              <div class="w-100 small-screen-margin">
                   <span id="close-button" class="close float-end" onclick="closeProfile()">&times</span>
               </div>
-              <div class="col-md-3 border-end p-4">
+              <div class="col-md-3 border-end p-4" id="kuvakorttiboksi">
 
-  <img class="w-100" src="${item.img}" alt="">
+  <img class="w-100" src="${item.img}" alt="" id="profile-img">
   <div class="">
       <h2 style="font-size: 20px;" class="display-6 text-center small-profile">${item.name}</h4>
       <p class="card-text text-center">(${item.tyyli})</p>
@@ -86,12 +86,17 @@ function profile(id) {
 
             
           profileCard.innerHTML = profile_div;
-          const closeBtn = document.getElementById('close-button');
-          const checkClick = closeBtn.addEventListener('click', () => {});
-          
-          wrapper.addEventListener('click', () => {
-            console.log(checkClick)
-          })
+        //   const openBtn = document.querySelectorAll('.open-button')[0];
+        //     openBtn.addEventListener('click', (e) => {
+        //         console.log(e)
+        //     })
+
+            
+        //   wrapper.addEventListener('click', () => {
+        //     if(profileOpen && !profile()) {
+        //         closeProfile();
+        //     }
+        //   })
 
       }
   })
