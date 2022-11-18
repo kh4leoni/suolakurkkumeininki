@@ -295,7 +295,7 @@ body {
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.61724439775910369);
+  background-color: rgba(0, 0, 0, 0.31724439775910369);
   border-radius: 10px;
   z-index: 13;
 }
@@ -716,7 +716,7 @@ body {
     right: 55px;
     bottom: 60px;
     font-size: 34px;
-    opacity: 50%;
+    opacity: 31%;
     text-decoration: none;
     color: black;
   }
