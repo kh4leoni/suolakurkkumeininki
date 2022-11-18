@@ -548,7 +548,7 @@ body {
 .toggle-button {
     display: flex;
     top: 190px;
-    right: 29px;
+    right: 55px;
     position: fixed;
     
 
@@ -713,8 +713,8 @@ body {
     visibility: visible;
     z-index: 5;
     position: fixed;
-    right: 45px;
-    bottom: 30px;
+    right: 55px;
+    bottom: 60px;
     font-size: 34px;
     opacity: 50%;
     text-decoration: none;
