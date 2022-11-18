@@ -48,12 +48,55 @@
       <div class="left side arvostelut">
         <div class="header">
           <h1><a href="./index.html" class="logo">SKTK</a></h1>
+          <h1 class="header-text">Suolakurkkutietokanta</h1>
         </div>
         <div class="image kurkku"></div>
+        <div class="review-btn-div">
+          <button class="btn review-btn" id="review-btn">
+            <i class="fa-regular fa-pen-to-square"></i>
+          </button>
+        </div>
         <div class="caption">
-          <!-- <p class="button">
+          <div class="arvostelu-kentta" id="review-card">
+            <label for="" style="text-align: left">Kurkun nimi:</label>
+            <input
+              class="form-control form-control-sm my-1"
+              type="text"
+              placeholder=""
+            />
+            <label for="" style="text-align: left">Kurkun tyyppi:</label>
+            <input
+              class="form-control form-control-sm mt-2 mb-4"
+              type="text"
+              placeholder=""
+            />
+            <span class="img-placeholder"></span>
+            <button class="btn btn-primary" id="add-img-btn">
+              <i class="fa-solid fa-camera"></i>
+            </button>
+            <label for="customRange2" class="form-label">Maku</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              max="5"
+              id="customRange2"
+            />
+            <label for="customRange2" class="form-label">Suutuntuma</label>
+            <input
+              type="range"
+              class="form-range"
+              min="0"
+              max="5"
+              id="customRange3"
+            />
+            <button class="btn mt-4" id="submit-review-btn">
+              Lähetä arvio!
+            </button>
+            <!-- <p class="button">
             Tervetuloa suolakurkkutietokantaan. Sivusto on tarkoitettu kaikille suolakurkun ystäville ja vihaajille.
           </p> -->
+          </div>
         </div>
       </div>
 
@@ -68,16 +111,15 @@
 
         <div class="caption">
           <h1>Arvostelut</h1>
-          <a href="#" class="toggle-button"
-            ><span class="bar"></span>
+          <button class="toggle-button">
+            <i class="fa-solid fa-bars menu-nappi"></i>
+            <!-- <span class="bar"></span>
             <span class="bar"></span>
-            <span class="bar"></span
-          ></a>
+            <span class="bar"></span> -->
+          </button>
           <a href="#" class="up-icon"><i class="fa-solid fa-circle-up"></i></a>
           <div class="container">
-            <div class="row" id="panel">
-              
-            </div>
+            <div class="row" id="panel"></div>
             <div
               class="row d-flex flex-wrap align-content-center p-3 border"
               id="profile"

@@ -2,6 +2,13 @@ const backgroundImage = document.querySelectorAll('.kurkku')[0];
 let profileOpen = false;
 const wrapper = document.querySelectorAll('.wrapper')[0];
 
+const reviewBtn = document.getElementById('review-btn');
+const reviewCard = document.getElementById('review-card');
+
+reviewBtn.addEventListener('click', () => {
+  reviewCard.classList.toggle('active');
+})
+
 
 let data = [
   { id: 1, name: 'Villen Rapsakat', img: './images/villen_rapsakat.png', tyyli: 'Venäläinen suolakurkku', arvosana: 1.5, maku: 40, suuTuntuma: 10 },
@@ -27,7 +34,7 @@ data.forEach((item) => {
           <div class="card-body">
               <div class="d-flex justify-content-between">
                   <h4 class="card-title" style="font-size: 15px;font-weight:600;">${item.name}</h4>
-                  <h4 style="font-weight:600;font-size: 15px;"><i class="fa-solid fa-star text-warning mx-3"></i>${item.arvosana} / 5 </h4>
+                  <h4 style="font-weight:600;font-size: 15px;"><i class="fa-solid fa-star text-warning mx-2"></i>${item.arvosana} / 5 </h4>
               </div>
               <p class="card-text">${item.tyyli}</p>
               <button class="btn btn-primary w-100 open-button" onclick="profile(${item.id})">Suurenna</button>
@@ -67,7 +74,7 @@ function profile(id) {
   </div>
 </div>
 <div class="col-md-9">
-  <h3 class="display-6 mt-2" style="font-size: 30px;letter-spacing:1.5px;">ARVOSANA</h3> <span>${item.arvosana} / 5</span>
+  <h3 class="display-6 mt-2" style="font-size: 30px;letter-spacing:1.5px;">ARVOSANA</h3><span>${item.arvosana} / 5</span>
   <div class="progress">
       <div class="progress-bar" style="width:${(item.arvosana / 5) * 100}%"></div>
   </div>
