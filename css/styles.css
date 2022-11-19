@@ -19,10 +19,12 @@ body {
   overflow: visible;
   height: auto;
   padding-top: calc(25vh - 100px);
+   
 }
 
 .wrapper .left.arvostelut {
   height: auto;
+  
 }
 
 .wrapper .right .navb {
@@ -82,11 +84,15 @@ body {
   margin-left:100px;
   border: solid 0.1px rgba(0, 0, 0, 0.11724439775910369);
   text-transform: uppercase;
+  z-index: 5;
 }
 
 .arvostelu-kentta.active {
-  display: flex;
+  display:flex;
+  
 }
+
+
 
 .review-btn-div {
   color: black;
@@ -241,7 +247,7 @@ body {
 .arvostelut .card {
   transition: 0.5s;
   transform: translate((0xp, 0px));
-}
+  }
 
 .arvostelut .card:hover {
   box-shadow: 10px 10px 40px -20px rgba(98, 98, 98);
@@ -603,6 +609,7 @@ body {
 
 .reseptit .row {
   flex-wrap: nowrap;
+  z-index: 1;
 }
 
 .reseptit .carousel-control-prev {
@@ -669,9 +676,8 @@ body {
 
 @media screen and (max-width: 1100px) {
 
-.wrapper .left .arvostelut .caption {
-  z-index: 5;
-}
+
+
 
   .review-btn-div {
     display: flex;
@@ -681,6 +687,10 @@ body {
     margin-bottom: 0;
     width: 96%;
     margin-left: 10px;
+    position: -webkit-sticky;
+    position:sticky;
+    
+    
   }
 
   .menu-nappi {
@@ -966,6 +976,16 @@ body {
 
     #search-btn-submit {
       top: -6px;
+    }
+
+    .arvostelu-kentta {
+      height: 90%;
+      width: 90%;
+      margin: 10px 0;
+    }
+
+    .wrapper .left.arvostelut {
+      height: auto;
     }
   }
 
