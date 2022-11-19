@@ -98,7 +98,7 @@ body {
   color: black;
   border-radius: 1000px;
   position: fixed;
-  top: 190px;
+  top: 160px;
   left: 20.5px;
   z-index: 30;
   display: flex;
@@ -115,6 +115,10 @@ body {
 
 #submit-review-btn {
   color: white;
+}
+
+.form-range::-webkit-slider-thumb {
+ background-color: #2bae66ff;
 }
 
 .wrapper .right .navb .navi-link {
@@ -885,6 +889,10 @@ body {
       font-size: 14px;
     }
 
+    #add-img-btn {
+      top: 50px;
+    }
+
     .up-icon,
     .up-icon:hover,
     .up-icon:visited {
@@ -980,11 +988,15 @@ body {
 
     .arvostelu-kentta {
       height: 90%;
-      width: 90%;
+      width: 230px;
       margin: 10px 0;
-    }
+      }
 
-    .wrapper .left.arvostelut {
+      #add-img-btn {
+        top: 20px;
+      }
+
+    .wrapper .left.arvostelut.active {
       height: auto;
     }
   }

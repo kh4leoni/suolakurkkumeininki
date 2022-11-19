@@ -4,9 +4,11 @@ const wrapper = document.querySelectorAll('.wrapper')[0];
 
 const reviewBtn = document.getElementById('review-btn');
 const reviewCard = document.getElementById('review-card');
+const leftSide = document.getElementById('left-side');
 
 reviewBtn.addEventListener('click', () => {
   reviewCard.classList.toggle('active');
+  leftSide.classList.toggle('active');
 })
 
 
