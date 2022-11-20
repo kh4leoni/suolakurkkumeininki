@@ -11,6 +11,12 @@ const pickleType = document.getElementById("type-field");
 const pickleFlavor = document.getElementById("customRange2");
 const pickleTexture = document.getElementById("customRange3");
 const submitReviewBtn = document.getElementById("submit-review-btn");
+const sentMessage = document.getElementById('sent-message');
+
+
+
+
+
 let uploadedImage;
 
 reviewBtn.addEventListener("click", () => {
@@ -18,7 +24,7 @@ reviewBtn.addEventListener("click", () => {
  
 });
 
-localStorage.clear();
+
 
 let data = [
   {
@@ -77,6 +83,22 @@ let data = [
     maku: 3,
     suuTuntuma: 3,
   },
+  {
+    id: 5,
+    name: "Euro East",
+    img: "./images/euro-east-suolakurkku.jpg",
+    tyyli: "Lohkottu suolakurkku",
+    maku: 3,
+    suuTuntuma: 3,
+  },
+  {
+    id: 5,
+    name: "Euro East",
+    img: "./images/euro-east-suolakurkku.jpg",
+    tyyli: "Lohkottu suolakurkku",
+    maku: 3,
+    suuTuntuma: 3,
+  },
 ];
 
 const savedData = JSON.parse(localStorage.getItem('data'))
@@ -92,15 +114,6 @@ renderReviews();
 
 submitReviewBtn.addEventListener("click", () => {
   addNewReview();
-
-  // reviewCard.innerHTML =
-  // "<h1>Kiitos arvostelusta!</h1><button class='btn text-white' id='write-new-btn'>Kirjoita uusi</button>";
-  // const writeNew = document.getElementById("write-new-btn");
-  // if (writeNew) {
-  //   writeNew.addEventListener("click", () => {
-  //     // window.location.reload();
-  //   });
-  // }
 });
 
 function renderReviews() {
@@ -236,7 +249,18 @@ function addNewReview() {
     console.log(data)
     localStorage.setItem("data", JSON.stringify(data));
     renderReviews();
+    pickleType.value = ''
+    pickleName.value = ''
     newId++;
+
+    reviewCard.innerHTML =
+    "<h1>Kiitos arvostelusta!</h1><button class='btn text-white' id='write-new-btn'>Uusi arvostelu</button>";
+    const writeNew = document.getElementById("write-new-btn");
+    if (writeNew) {
+      writeNew.addEventListener("click", () => {
+        window.location.reload();
+      });
+    }
   } else {
     alert("Täytä molemmat kentät");
   }
