@@ -65,17 +65,23 @@
               class="form-control form-control-sm my-1"
               type="text"
               placeholder=""
+              id="name-field"
+              required=""
             />
             <label for="" style="text-align: left">Kurkun tyyppi:</label>
             <input
               class="form-control form-control-sm mt-2 mb-4"
               type="text"
               placeholder=""
+              id="type-field"
+              required=""
             />
             <span class="img-placeholder"></span>
-            <button class="btn btn-primary" id="add-img-btn">
-              <i class="fa-solid fa-camera"></i>
-            </button>
+           
+              <label for="image-input" class="img-label"> <i class="fa-solid fa-camera"></i></label>
+              <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg" style="position: absolute">
+             
+            
             <label for="customRange2" class="form-label">Maku</label>
             <input
               type="range"
