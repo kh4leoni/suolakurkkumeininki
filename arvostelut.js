@@ -8,7 +8,8 @@ const leftSide = document.getElementById('left-side');
 
 reviewBtn.addEventListener('click', () => {
   reviewCard.classList.toggle('active');
-  leftSide.classList.toggle('active');
+  const nappi = leftSide.classList.toggle('active');   
+  
 })
 
 
@@ -59,7 +60,6 @@ function profile(id) {
   panel.style.opacity = 0.5;
   backgroundImage.style.transform = "scale(1)";
     profileOpen = true;
-    console.log(profileOpen)
  
   data.forEach((item) => {
       if (item.id === id) {

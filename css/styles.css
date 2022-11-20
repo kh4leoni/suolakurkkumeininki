@@ -4,6 +4,8 @@ body {
   font-size: 0.87em;
 }
 
+
+
 .wrapper .left,
 .wrapper .right {
   width: 100%;
@@ -13,6 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
 }
 
 .wrapper .right.arvostelut {
@@ -85,12 +88,48 @@ body {
   border: solid 0.1px rgba(0, 0, 0, 0.11724439775910369);
   text-transform: uppercase;
   z-index: 5;
+  animation: fadeInAnimation ease 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+.caption.etusivu {
+  width: 40%;
+  height: 50%;
+  margin: auto;
+  background-color: white;
+  border-radius: 17px;
+  opacity: 89%;  
+  
+}
+
+.fade-out {
+  animation: fadeOut 2s;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+  	opacity: 1;
+  }
+  to {
+ 	opacity: 0;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .arvostelu-kentta.active {
   display:flex;
-  
-}
+  }
 
 
 
@@ -374,6 +413,8 @@ body {
   width: 30px;
   height: 30px;
   z-index: 13;
+  color: rgba(0, 0, 0, 0.4724439775910369);
+  
 }
 
 .toggle-button .bar {
@@ -930,6 +971,9 @@ body {
       right: 0;
       width: 95%;
       z-index: 50;
+      animation: fadeInAnimation ease 0.5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
     }
 
     .wrapper .caption .button:hover {
@@ -964,7 +1008,7 @@ body {
     }
   }
 
-  @media screen and (max-height: 500px) {
+  @media screen and (max-height: 650px) {
     #profile {
       top: 0px;
       height: 100%;
