@@ -18,8 +18,7 @@ reviewBtn.addEventListener("click", () => {
  
 });
 
-
-
+localStorage.clear();
 
 let data = [
   {
@@ -62,10 +61,29 @@ let data = [
     maku: 3,
     suuTuntuma: 3,
   },
+  {
+    id: 5,
+    name: "Euro East",
+    img: "./images/euro-east-suolakurkku.jpg",
+    tyyli: "Lohkottu suolakurkku",
+    maku: 3,
+    suuTuntuma: 3,
+  },
+  {
+    id: 5,
+    name: "Euro East",
+    img: "./images/euro-east-suolakurkku.jpg",
+    tyyli: "Lohkottu suolakurkku",
+    maku: 3,
+    suuTuntuma: 3,
+  },
 ];
 
 const savedData = JSON.parse(localStorage.getItem('data'))
-data = savedData;
+if(savedData != null) {
+  data = savedData;
+}
+
 
 
 
@@ -87,6 +105,9 @@ submitReviewBtn.addEventListener("click", () => {
 
 function renderReviews() {
   let cards = " ";
+  
+
+
 
   data.forEach((item) => {
     cards += `
