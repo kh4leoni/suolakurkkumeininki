@@ -4,8 +4,6 @@ body {
   font-size: 0.87em;
 }
 
-
-
 .wrapper .left,
 .wrapper .right {
   width: 100%;
@@ -15,7 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
 }
 
 #image-input {
@@ -27,12 +24,10 @@ body {
   overflow: visible;
   height: auto;
   padding-top: calc(25vh - 100px);
-   
 }
 
 .wrapper .left.arvostelut {
   height: auto;
-  
 }
 
 .wrapper .right .navb {
@@ -64,7 +59,6 @@ body {
   align-items: center;
   color: white;
   letter-spacing: 1.5px;
- 
 }
 
 .arvostelu-kentta {
@@ -89,14 +83,13 @@ body {
   flex-direction: column;
   border-radius: 10px;
   display: none;
-  margin-left:100px;
+  margin-left: 100px;
   border: solid 0.1px rgba(0, 0, 0, 0.11724439775910369);
   text-transform: uppercase;
   z-index: 5;
   animation: fadeInAnimation ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-
 }
 
 .caption.etusivu {
@@ -105,8 +98,7 @@ body {
   margin: auto;
   background-color: white;
   border-radius: 17px;
-  opacity: 89%;  
-  
+  opacity: 89%;
 }
 
 .fade-out {
@@ -116,10 +108,10 @@ body {
 
 @keyframes fadeOut {
   from {
-  	opacity: 1;
+    opacity: 1;
   }
   to {
- 	opacity: 0;
+    opacity: 0;
   }
 }
 
@@ -133,10 +125,8 @@ body {
 }
 
 .arvostelu-kentta.active {
-  display:flex;
-  }
-
-
+  display: flex;
+}
 
 .review-btn-div {
   color: black;
@@ -162,7 +152,7 @@ body {
 }
 
 .form-range::-webkit-slider-thumb {
- background-color: #2bae66ff;
+  background-color: #2bae66ff;
 }
 
 .wrapper .right .navb .navi-link {
@@ -225,7 +215,7 @@ body {
 }
 
 .pickle-and-plate {
-  background-image: url('../images/uusi-resepti-testi.jpeg');
+  background-image: url("../images/uusi-resepti-testi.jpeg");
 }
 
 .wrapper .caption {
@@ -299,7 +289,7 @@ body {
 .arvostelut .card {
   transition: 0.5s;
   transform: translate((0xp, 0px));
-  }
+}
 
 .arvostelut .card:hover {
   box-shadow: 10px 10px 40px -20px rgba(98, 98, 98);
@@ -427,9 +417,6 @@ body {
   height: 30px;
   z-index: 30;
   color: rgba(0, 0, 0, 0.71724439775910369);
-  
-  
-  
 }
 
 .toggle-button .bar {
@@ -472,9 +459,9 @@ body {
 .recipe-title {
   display: block;
   width: 40%;
-
+  padding-left: 20px;
   margin-top: 40px;
-  text-align: center;
+  text-align: left;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.96);
 }
@@ -485,12 +472,13 @@ body {
   margin-top: 25px;
   z-index: 2;
   color: black;
-  padding: 20px;
+  padding: 10px 20px;
   resize: none;
   background-color: rgba(255, 255, 255, 0.96);
 }
 
 .new-recipe-hdr h1 {
+  font-size: 36px;
   text-align: center;
   margin: 0;
   color: white;
@@ -507,7 +495,6 @@ body {
   text-align: center;
   position: relative;
   z-index: 3;
-
 }
 
 .content {
@@ -517,17 +504,15 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  margin-left: 30px
+  margin-left: 30px;
 }
 .new-recipe-container {
   height: auto;
   width: 100%;
   margin: auto;
 
- /* /* background-color: rgba(43,174,102, 0.88); */
-
+  /* /* background-color: rgba(43,174,102, 0.88); */
 }
-
 
 .image2 {
   width: 100%;
@@ -540,8 +525,12 @@ body {
 }
 
 .new-recipe-container::before {
-  background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,0.6979166666666667) 0%, rgba(0,0,0,0.29735644257703087) 50%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6979166666666667) 0%,
+    rgba(0, 0, 0, 0.29735644257703087) 50%
+  );
   width: 100%;
   height: 100%;
   position: absolute;
@@ -562,13 +551,14 @@ background: linear-gradient(0deg, rgba(0,0,0,0.6979166666666667) 0%, rgba(0,0,0,
 
 .new-recipe-btn {
   margin-top: 30px;
-  padding: 15px;
+  padding: 15px 10px;
   z-index: 1;
   text-transform: uppercase;
   width: 200px;
   letter-spacing: 2px;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 20px;
+  letter-spacing: 1.2px;
 
 }
 
@@ -582,11 +572,12 @@ background: linear-gradient(0deg, rgba(0,0,0,0.6979166666666667) 0%, rgba(0,0,0,
 
 .new-navi-div {
   position: absolute;
-  top: 24px;
-  right: 40px;
+  top: 30px;
+  right: 15px;
   display: flex;
   z-index: 5;
 }
+
 
 .new-navi-div a {
   text-decoration: none;
@@ -637,11 +628,8 @@ background: linear-gradient(0deg, rgba(0,0,0,0.6979166666666667) 0%, rgba(0,0,0,
 }
 
 .img-wrapper {
-
   height: 320px;
- 
 }
-
 
 .logo:visited {
   color: white;
@@ -668,14 +656,43 @@ background: linear-gradient(0deg, rgba(0,0,0,0.6979166666666667) 0%, rgba(0,0,0,
   border-radius: 5px;
   background-color: white;
   opacity: 80%;
-  z-index: 10; 
+  z-index: 10;
   background-position: center;
   background-size: cover;
-
 }
 
 input[type="file"] {
   display: none;
+}
+
+
+.thank-you-message {
+  background-color: rgba(0, 0, 0, 0.45735644257703087);
+  margin-top: 150px;
+  text-align: center;
+  z-index: 15;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+.thank-you-message .btn {
+  padding: 15px 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  margin-top: 15px;
+}
+
+.thank-you-message .btn a,
+.thank-you-message .btn a:visited {
+  text-decoration: none;
+  color: white;
+  
+  
+  
 }
 
 .img-label {
@@ -694,7 +711,6 @@ input[type="file"] {
   height: 40px;
   background-color: #2bae66ff;
   width: 100px;
- 
 
   cursor: pointer;
 }
@@ -760,8 +776,6 @@ input[type="file"] {
     width: 50px;
     right: 5px;
   }
-
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -772,12 +786,9 @@ input[type="file"] {
   .new-recipe-container {
     width: 100%;
   }
-
-
-
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1200px) {
   .wrapper {
     display: flex;
   }
@@ -791,16 +802,37 @@ input[type="file"] {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
 
+
+  .thank-you-message {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+  }
+
+  .content .up-icon {
+    visibility: visible;
+    color: white;
+    opacity: 50%;
+    font-size: 34px;
+    position: fixed;
+    right: 20px;
+    bottom: 250px;
+
+    z-index: 5;
+  }
 
   #exampleFormControlTextarea1 {
     height: 300px;
     width: 80%;
   }
 
-  .recipe-title{
+
+
+  .recipe-title {
     width: 80%;
+    margin-top: 120px;
   }
 
   .review-btn-div {
@@ -812,9 +844,7 @@ input[type="file"] {
     width: 96%;
     margin-left: 10px;
     position: -webkit-sticky;
-    position:sticky;
-    
-    
+    position: sticky;
   }
 
   .menu-nappi {
@@ -897,7 +927,7 @@ input[type="file"] {
   }
 
   .color-green {
-    color:#2bae66ff;
+    color: #2bae66ff;
   }
 
   .flexnav {
@@ -943,28 +973,32 @@ input[type="file"] {
     position: absolute;
     margin-top: 20px;
     right: 4px;
-    
   }
 
   .new-navi-div a {
     margin: 6px 0;
     text-align: center;
-
   }
 
   .new-navi-div.active {
     visibility: visible;
     display: flex;
-    position: fixed;  
+    position: fixed;
     background-color: #2bae66ff;
     width: 100%;
     left: 0;
     top: 0;
     margin-top: 0;
     opacity: 100;
-    
   }
 
+  .new-navi-div a:hover {
+    background: none;
+    color: rgba(0, 0, 0, 0.3724439775910369);
+    transition: none;
+    padding: 1em;
+    border-radius: 0;
+  }
   .kyna-icon {
     left: 100px;
   }
@@ -1038,6 +1072,16 @@ input[type="file"] {
       opacity: 31%;
       text-decoration: none;
       color: black;
+    }
+
+    .content .up-icon,
+    .content .up-icon:hover
+    .content .up-icon:visited {
+      color: white;
+      right: 20px;
+      bottom: 250px;
+      opacity: 50%;
+
     }
 
     .reseptit .carousel-control-prev {
@@ -1126,11 +1170,11 @@ input[type="file"] {
       height: 90%;
       width: 230px;
       margin: 10px 0;
-      }
+    }
 
-      #add-img-btn {
-        top: 20px;
-      }
+    #add-img-btn {
+      top: 20px;
+    }
 
     .wrapper .left.arvostelut.active {
       height: auto;
@@ -1142,7 +1186,7 @@ input[type="file"] {
   /* .navi-link {
     visibility: hidden;
   } */
-  /* 
+  /*
   .toggle-button {
     display: flex;
   }
@@ -1170,7 +1214,7 @@ input[type="file"] {
   .nav-link-div {
     display: none;
     flex-direction: column;
-   
+
   } */
   /* .nav-link-div.active {
     display: flex;
