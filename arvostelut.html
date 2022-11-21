@@ -88,16 +88,22 @@
               class="form-range"
               min="0"
               max="5"
+              value="0"
               id="customRange2"
+              oninput="this.nextElementSibling.value = this.value"
             />
-            <label for="customRange2" class="form-label">Suutuntuma</label>
+            <output>0</output>
+            <label for="customRange2" class="form-label mt-2">Suutuntuma</label>
             <input
               type="range"
               class="form-range"
               min="0"
               max="5"
+              value="0"
               id="customRange3"
+              oninput="this.nextElementSibling.value = this.value"
             />
+            <output>0</output>
             <button class="btn mt-4" id="submit-review-btn">
               Lähetä arvio!
             </button>

@@ -126,7 +126,11 @@ function renderReviews() {
     cards += `
   <div class="col-12 col-md-6 col-lg-4"s>
       <div class="card">
-          <img class="w-100" src="${item.img}" alt="">
+      <div class="img-wrapper">
+      <img class="w-100" src="${
+        item.img
+      }" alt="" style="width: 100%; height: 100%;">
+      </div>
           <div class="card-body">
               <div class="d-flex justify-content-between">
                   <h4 class="card-title" style="font-size: 15px;font-weight:600;">${
@@ -234,6 +238,11 @@ image_input.addEventListener("change", function () {
 });
 
 function addNewReview() {
+
+  console.log(uploadedImage)
+  if (uploadedImage === undefined)  {
+    uploadedImage = './images/no-image.png'
+  }
   let newId = data.length + 1;
   const newPickle = {
     id: newId,

@@ -621,6 +621,13 @@ body {
   color: white;
 }
 
+.img-wrapper {
+
+  height: 320px;
+ 
+}
+
+
 .logo:visited {
   color: white;
   text-decoration: none;
