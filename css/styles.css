@@ -1051,6 +1051,19 @@ input[type="file"] {
   }
 
   @media screen and (max-width: 700px) {
+
+    .arvostelu-kentta {
+      margin-bottom: 0;
+      width: 100%;
+      margin-left: 10px;
+      height: 380px
+  
+    }
+
+    .img-label {
+      right: 10px;
+      top: 103px;
+    }
     .new-recipe-sktk .logo {
       font-size: 18px;
       left: -5px;
@@ -1058,6 +1071,7 @@ input[type="file"] {
 
     #add-img-btn {
       top: 50px;
+      right: 100px;
     }
 
     .up-icon,
