@@ -224,6 +224,10 @@ body {
   background-image: url("../images/putoavat-kurkut.jpg");
 }
 
+.pickle-and-plate {
+  background-image: url('../images/uusi-resepti-testi.jpeg');
+}
+
 .wrapper .caption {
   position: relative;
   z-index: 10;
@@ -469,16 +473,16 @@ body {
   display: block;
   width: 40%;
 
-  margin-top: 15px;
+  margin-top: 40px;
   text-align: center;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.96);
 }
 
 #exampleFormControlTextarea1 {
-  height: 400px;
-  width: 50%;
-  margin-top: 15px;
+  height: 300px;
+  width: 40%;
+  margin-top: 25px;
   z-index: 2;
   color: black;
   padding: 20px;
@@ -497,11 +501,12 @@ body {
 }
 
 .new-recipe-hdr {
-  background: rgba(43, 174, 102, 0.88);
+  background-color: rgba(0, 0, 0, 0.4724439775910369);
   padding: 35px 0;
   text-align: center;
   position: relative;
   z-index: 3;
+
 }
 
 .content {
@@ -511,19 +516,17 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 2;
+  margin-left: 30px
 }
 .new-recipe-container {
-  height: 100vh;
+  height: auto;
   width: 100%;
-  /* background-color: rgba(43,174,102, 0.88);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url('../images/many-pickles2.jpeg'); */
+  margin: auto;
+
+ /* /* background-color: rgba(43,174,102, 0.88); */
+
 }
+
 
 .image2 {
   width: 100%;
@@ -536,7 +539,8 @@ body {
 }
 
 .new-recipe-container::before {
-  background: rgba(0, 0, 0, 0.2724439775910369);
+  background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.6979166666666667) 0%, rgba(0,0,0,0.29735644257703087) 50%);
   width: 100%;
   height: 100%;
   position: absolute;
@@ -545,6 +549,14 @@ body {
   z-index: 1;
   content: "";
   display: block;
+}
+
+.new-recipe-body {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .new-recipe-btn {
@@ -556,6 +568,7 @@ body {
   letter-spacing: 2px;
   font-weight: 300;
   font-size: 20px;
+
 }
 
 .new-recipe-flexer {
@@ -569,7 +582,7 @@ body {
 .new-navi-div {
   position: absolute;
   top: 24px;
-  right: 30px;
+  right: 40px;
   display: flex;
   z-index: 5;
 }
@@ -584,6 +597,7 @@ body {
   letter-spacing: 1.7px;
   z-index: 3;
   border-radius: 2.5em;
+  font-size: 16px;
 }
 
 .new-navi-div a:hover {
@@ -597,7 +611,7 @@ body {
 .new-recipe-sktk {
   position: absolute;
   left: 20px;
-  top: 15px;
+  top: -5px;
   font-family: "Shadows Into Light", cursive;
   z-index: 5;
   color: white;
@@ -744,12 +758,25 @@ input[type="file"] {
     width: 50px;
     right: 5px;
   }
+
+
 }
 
 @media screen and (max-width: 1300px) {
   .header-text {
     display: none;
   }
+
+  .new-recipe-container {
+    width: 100%;
+  }
+
+ .new-recipe-hdr .toggle-button {
+    color: #2bae66ff;
+    opacity: 50%;
+  }
+
+
 }
 
 @media screen and (min-width: 1100px) {
@@ -769,7 +796,14 @@ input[type="file"] {
 @media screen and (max-width: 1100px) {
 
 
+  #exampleFormControlTextarea1 {
+    height: 300px;
+    width: 80%;
+  }
 
+  .recipe-title{
+    width: 80%;
+  }
 
   .review-btn-div {
     display: flex;
@@ -858,7 +892,11 @@ input[type="file"] {
   }
 
   .new-recipe-container .toggle-button {
-    top: 38px;
+    top: 300px;
+  }
+
+  .color-green {
+    color:#2bae66ff;
   }
 
   .flexnav {
@@ -904,7 +942,7 @@ input[type="file"] {
     position: absolute;
     margin-top: 20px;
     right: 4px;
-    border-radius: 10px;
+    
   }
 
   .new-navi-div a {
@@ -914,11 +952,14 @@ input[type="file"] {
   .new-navi-div.active {
     visibility: visible;
     display: flex;
-    position: fixed;
+    position: fixed;  
+    background-color: #2bae66ff;
+    width: 100%;
+    left: 0;
     top: 0;
-    right: -22px;
-    background-color: rgba(0, 0, 0, 0.61724439775910369);
-    width: 322px;
+    margin-top: 0;
+    opacity: 100;
+    
   }
 
   .kyna-icon {
@@ -974,7 +1015,7 @@ input[type="file"] {
 
   @media screen and (max-width: 700px) {
     .new-recipe-sktk .logo {
-      font-size: 14px;
+      font-size: 24px;
     }
 
     #add-img-btn {
