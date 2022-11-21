@@ -392,7 +392,7 @@ body {
 }
 
 .wrapper .left.arvostelut:hover .image {
-  transform: scale(1.2);
+  transform: scale(1);
 }
 
 .btn {
@@ -502,6 +502,7 @@ body {
 
 .new-recipe-hdr {
   background-color: rgba(0, 0, 0, 0.4724439775910369);
+  background-color: #2bae66ff;
   padding: 35px 0;
   text-align: center;
   position: relative;
@@ -702,6 +703,7 @@ input[type="file"] {
   color: white;
   font-size: 24px;
   font-weight: 300;
+  left: 10px;
 }
 
 .new-recipe-sktk .logo:hover {
@@ -771,10 +773,6 @@ input[type="file"] {
     width: 100%;
   }
 
- .new-recipe-hdr .toggle-button {
-    color: #2bae66ff;
-    opacity: 50%;
-  }
 
 
 }
@@ -892,7 +890,10 @@ input[type="file"] {
   }
 
   .new-recipe-container .toggle-button {
-    top: 300px;
+    top: 250px;
+    right: 25px;
+    color: #fcf6f5ff;
+    opacity: 60%;
   }
 
   .color-green {
@@ -947,6 +948,8 @@ input[type="file"] {
 
   .new-navi-div a {
     margin: 6px 0;
+    text-align: center;
+
   }
 
   .new-navi-div.active {
@@ -1015,7 +1018,8 @@ input[type="file"] {
 
   @media screen and (max-width: 700px) {
     .new-recipe-sktk .logo {
-      font-size: 24px;
+      font-size: 18px;
+      left: -5px;
     }
 
     #add-img-btn {
