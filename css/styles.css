@@ -867,6 +867,12 @@ input[type="file"] {
 
 @media screen and (max-width: 1200px) {
 
+  .wrapper .right .caption .toggle-button {
+    color: white;
+    opacity: 50%;
+    right: 80px;
+  }
+
   .wrapper .left .caption {
     width: 100%;
   }
@@ -1024,7 +1030,7 @@ input[type="file"] {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.61724439775910369);
+    background-color: rgba(0, 0, 0, 0.6724439775910369);
     width: 100%;
     justify-content: center;
   }
