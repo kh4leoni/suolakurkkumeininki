@@ -113,7 +113,7 @@ function renderReviews() {
   <div class="col-12 col-md-6 col-lg-4"s>
       <div class="card">
       <div class="img-wrapper">
-      <img class="w-100" src="${
+      <img class="w-100 arvostelu-img" src="${
         item.img
       }" alt="" style="width: 100%; height: 100%;">
       </div>
@@ -248,7 +248,7 @@ function addNewReview() {
     newId++;
 
     reviewCard.innerHTML =
-      "<h1>Kiitos!</h1><button class='btn text-white' id='write-new-btn'>Uusi arvostelu</button>";
+      "<h1>Kiitos!</h1><button class='btn text-white' id='write-new-btn'>Sulje</button>";
     const writeNew = document.getElementById("write-new-btn");
     if (writeNew) {
       writeNew.addEventListener("click", () => {
