@@ -1079,7 +1079,8 @@ input[type="file"] {
     border-radius: 0;
   }
   .kyna-icon {
-    left: 100px;
+    left: 130px;
+    top: 30px;
   }
   .wrapper .haku .caption .button {
     background: none;
