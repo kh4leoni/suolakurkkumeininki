@@ -198,6 +198,10 @@ body {
   margin-top: 50px;
 }
 
+.etusivu-image {
+  background-image: url('../images/etusivutesti1.jpeg');
+}
+
 .pickle-fork {
   background-image: url("../images/pickle-fork.jpeg");
 }
@@ -241,6 +245,7 @@ body {
 .wrapper .caption h1 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: 40px;
 }
 
 .wrapper .right .caption {
@@ -321,8 +326,61 @@ body {
   box-shadow: inset 0 1px 1px #fcf6f5ff, 0 0 8px #2bae66ff;
 }
 
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+
+.login h3{
+  color: white;
+  margin-top: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.login-icon, .login-icon:visited {
+  text-decoration: none;
+  color: #2bae66ff;
+  font-size: 30px;
+  border: solid #2bae66ff 3px;
+  border-radius: 25px;
+  width: 23%;
+  background-color: #fcf6f5ff;
+}
+
+.login-icon:hover {
+  background-color: black;
+  color: white;
+  opacity: 80%;
+  transition: 0.7s;
+  border: none;
+}
+
+
+.login-icon-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+#login-button {
+  text-transform: uppercase;
+  color: #fcf6f5ff;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding: 10px 25px;
+}
+
 .wrapper .caption .button {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.4);
+  /* background-color: rgba(255, 255, 255, 0.8); */
   color: #fcf6f5ff;
   padding: 15px;
   text-decoration: none;
@@ -332,7 +390,7 @@ body {
   transition: 0.25s ease all;
   font-size: 1.25em;
   /* overflow: hidden; */
-  border-radius: 0px;
+  border-radius: 10px;
   word-wrap: break-word;
   hyphens: auto;
 }
@@ -389,6 +447,9 @@ body {
   background-color: #2bae66ff;
   border: none;
   border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 25px;
 }
 
 .kyna-icon {
@@ -438,6 +499,7 @@ body {
 .btn:hover {
   background-color: black;
   color: white;
+  transition: 0.5s;
 }
 
 .up-icon {
@@ -525,11 +587,10 @@ body {
 }
 
 .new-recipe-container::before {
-  background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.6979166666666667) 0%,
-    rgba(0, 0, 0, 0.29735644257703087) 50%
+    rgba(0, 0, 0, 0.6643032212885154) 0%,
+    rgba(0, 0, 0, 0.01724439775910369) 50%
   );
   width: 100%;
   height: auto;
@@ -760,7 +821,7 @@ input[type="file"] {
 }
 
 @media screen and (max-width: 1600px) {
-  .wrapper .caption .button {
+  .wrapper .haku .caption .button {
     background: none;
   }
 }
@@ -811,7 +872,7 @@ input[type="file"] {
     width: 80%
   }
 
-  .content .up-icon {
+  /* .content .up-icon {
     visibility: visible;
     color: white;
     opacity: 50%;
@@ -820,8 +881,8 @@ input[type="file"] {
     right: 20px;
     bottom: 250px;
 
-    z-index: 5;
-  }
+    z-index: 20;
+  } */
 
   #exampleFormControlTextarea1 {
     height: 300px;
@@ -1002,7 +1063,7 @@ input[type="file"] {
   .kyna-icon {
     left: 100px;
   }
-  .wrapper .caption .button {
+  .wrapper .haku .caption .button {
     background: none;
   }
 

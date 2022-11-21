@@ -11,21 +11,13 @@ const pickleType = document.getElementById("type-field");
 const pickleFlavor = document.getElementById("customRange2");
 const pickleTexture = document.getElementById("customRange3");
 const submitReviewBtn = document.getElementById("submit-review-btn");
-const sentMessage = document.getElementById('sent-message');
-
-
-
-
+const sentMessage = document.getElementById("sent-message");
 
 let uploadedImage;
 
 reviewBtn.addEventListener("click", () => {
   reviewCard.classList.toggle("active");
- 
 });
-
-
-
 
 let data = [
   {
@@ -102,14 +94,10 @@ let data = [
   },
 ];
 
-const savedData = JSON.parse(localStorage.getItem('data'))
-if(savedData != null) {
+const savedData = JSON.parse(localStorage.getItem("data"));
+if (savedData != null) {
   data = savedData;
 }
-
-
-
-
 
 renderReviews();
 
@@ -119,9 +107,6 @@ submitReviewBtn.addEventListener("click", () => {
 
 function renderReviews() {
   let cards = " ";
-  
-
-
 
   data.forEach((item) => {
     cards += `
@@ -142,7 +127,7 @@ function renderReviews() {
                   } / 5 </h4>
               </div>
               <p class="card-text">${item.tyyli}</p>
-              <button class="btn btn-primary w-100 open-button" onclick="profile(${
+              <button class="btn btn-primary open-button" onclick="profile(${
                 item.id
               })">Suurenna</button>
           </div>
@@ -239,10 +224,9 @@ image_input.addEventListener("change", function () {
 });
 
 function addNewReview() {
-
-  console.log(uploadedImage)
-  if (uploadedImage === undefined)  {
-    uploadedImage = './images/no-image.png'
+  console.log(uploadedImage);
+  if (uploadedImage === undefined) {
+    uploadedImage = "./images/no-image.png";
   }
   let newId = data.length + 1;
   const newPickle = {
@@ -256,15 +240,15 @@ function addNewReview() {
 
   if (pickleName.value != "" && pickleType.value != "") {
     data.push(newPickle);
-    console.log(data)
+    console.log(data);
     localStorage.setItem("data", JSON.stringify(data));
     renderReviews();
-    pickleType.value = ''
-    pickleName.value = ''
+    pickleType.value = "";
+    pickleName.value = "";
     newId++;
 
     reviewCard.innerHTML =
-    "<h1>Kiitos arvostelusta!</h1><button class='btn text-white' id='write-new-btn'>Uusi arvostelu</button>";
+      "<h1>Kiitos!</h1><button class='btn text-white' id='write-new-btn'>Uusi arvostelu</button>";
     const writeNew = document.getElementById("write-new-btn");
     if (writeNew) {
       writeNew.addEventListener("click", () => {
