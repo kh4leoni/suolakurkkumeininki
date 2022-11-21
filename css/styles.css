@@ -524,7 +524,7 @@ body {
   left: 0;
 }
 
-/* .new-recipe-container::before {
+.new-recipe-container::before {
   background: rgb(0, 0, 0);
   background: linear-gradient(
     0deg,
@@ -532,14 +532,14 @@ body {
     rgba(0, 0, 0, 0.29735644257703087) 50%
   );
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   content: "";
   display: block;
-} */
+}
 
 .new-recipe-body {
   width: 100%;
