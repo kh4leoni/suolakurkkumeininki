@@ -865,6 +865,16 @@ input[type="file"] {
 
 @media screen and (max-width: 1200px) {
 
+  .wrapper .left .caption {
+    width: 100%;
+  }
+
+  .wrapper .caption .button.login {
+    margin: auto;
+    width: 60%;
+  }
+
+
 
   .thank-you-message {
     margin-left: auto;
@@ -1112,6 +1122,11 @@ input[type="file"] {
   }
 
   @media screen and (max-width: 700px) {
+
+    .wrapper .caption .button.login {
+      margin: auto;
+      width: 80%;
+    }
 
     .arvostelu-kentta {
       margin-bottom: 0;
