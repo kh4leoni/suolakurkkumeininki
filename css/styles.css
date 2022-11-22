@@ -500,7 +500,7 @@ body {
 .toggle-button {
   position: absolute;
   top: 1.5em;
-  right: 1em;
+  right: 16px;
   display: hidden;
   flex-direction: column;
   justify-content: space-between;
@@ -921,12 +921,9 @@ input[type="file"] {
   .wrapper .right .caption .toggle-button {
     color: white;
     opacity: 60%;
-    right: 80px;
+    right: 40px;
   }
 
-  .wrapper .left .caption .toggle-button {
-    right: 70px;
-  }
 
 
 
@@ -973,6 +970,8 @@ input[type="file"] {
 
   .review-btn-div {
     display: flex;
+    top: 434px;
+    left: 3px;
   }
 
   .arvostelu-kentta {
@@ -1196,6 +1195,8 @@ input[type="file"] {
 
   @media screen and (max-width: 700px) {
 
+   
+
     .wrapper .caption .button.login {
       margin: auto;
       width: 80%;
@@ -1203,7 +1204,7 @@ input[type="file"] {
 
     .arvostelu-kentta {
       margin-bottom: 0;
-      width: 100%;
+      width: 90%;
       margin-left: 10px;
       height: 380px
   
