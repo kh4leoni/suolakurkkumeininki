@@ -15,6 +15,8 @@ body {
   overflow: hidden;
 }
 
+
+
 #image-input {
   position: absolute;
   right: 0;
@@ -92,14 +94,6 @@ body {
   animation-fill-mode: forwards;
 }
 
-.caption.etusivu {
-  width: 40%;
-  height: 50%;
-  margin: auto;
-  background-color: white;
-  border-radius: 17px;
-  opacity: 89%;
-}
 
 .fade-out {
   animation: fadeOut 2s;
@@ -197,7 +191,6 @@ body {
 
 .jar {
   background-image: url("../images/jar1.jpeg");
-  margin-top: 50px;
 }
 
 .etusivu-image {
@@ -223,6 +216,14 @@ body {
 .pickle-and-plate {
   background-image: url("../images/uusi-resepti-testi.jpeg");
 }
+
+.testaillaan {
+  background-image: url('../images/uusi-resepti-testi.jpeg');
+  
+
+}
+
+
 
 .wrapper .caption {
   position: relative;
@@ -419,6 +420,33 @@ body {
   transform: scale(1.1);
 }
 
+.esittely {
+  background-color: white;
+  width: 50%;
+  letter-spacing: 0.6px;
+  border-radius: 15px;
+  border: solid 3px #2bae66ff;
+  opacity: 50%;
+  margin-top: 200px;
+  margin-left: 30px;
+  transition: ease-in-out 0.35s;
+
+}
+
+/* .esittely:hover {
+  opacity: 100%;
+  transform: scale(1.2);
+  
+} */
+
+
+
+.esittely h3, h4 {
+  padding: 20px;
+  color: #2bae66ff;
+}
+
+
 .wrapper .side::before {
   background: linear-gradient(
     0deg,
@@ -430,7 +458,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   content: "";
   display: block;
   pointer-events: none;
@@ -482,13 +510,7 @@ body {
   color: rgba(0, 0, 0, 0.71724439775910369);
 }
 
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.31724439775910369);
-  border-radius: 10px;
-  z-index: 13;
-}
+
 
 .col-md-6 {
   margin: 10px 0;
@@ -680,9 +702,12 @@ body {
   position: absolute;
   top: 192px;
   border-radius: 10px;
+  display:none;
 }
 
-
+#wrong-password.active {
+  display:flex;
+}
 .padding-span {
   margin-top: 50px;
 }
@@ -704,6 +729,10 @@ body {
 .img-wrapper {
   height: 300px;
   
+}
+
+.wrapper .right.etusivu .flexnav {
+  background-color: rgba(43, 174, 102, 0.8);  
 }
 
 .arvostelu-img {
@@ -795,6 +824,10 @@ input[type="file"] {
   cursor: pointer;
 }
 
+#send-new-recipe-btn {
+  border: solid 0.2px rgba(255, 255, 255, 0.4)
+}
+
 .new-recipe-sktk .logo {
   color: white;
   font-size: 24px;
@@ -832,6 +865,7 @@ input[type="file"] {
   visibility: hidden;
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: none;
 }
 
 #search-btn-submit {
@@ -886,9 +920,16 @@ input[type="file"] {
 
   .wrapper .right .caption .toggle-button {
     color: white;
-    opacity: 50%;
+    opacity: 60%;
     right: 80px;
   }
+
+  .wrapper .left .caption .toggle-button {
+    right: 70px;
+  }
+
+
+
 
   .wrapper .left .caption {
     width: 100%;
@@ -898,7 +939,6 @@ input[type="file"] {
     margin: auto;
     width: 60%;
   }
-
 
 
   .thank-you-message {
@@ -973,10 +1013,19 @@ input[type="file"] {
     right: 55px;
     position: fixed;
     border: none !important;
-    font-size: 0;
+    /* font-size: 0;
     outline: 0;
     background: transparent;
-    opacity: 30%;
+    opacity: 30%; */
+    color: white;
+    opacity: 100%;
+    background-color:rgba(43, 174, 102, 0.5);
+    padding-bottom: 30px;
+    padding: 0 20px;
+    align-items: center;
+    border-radius: 10px;
+  }
+    
   }
   .search-button {
     margin-bottom: 60px;
@@ -998,9 +1047,7 @@ input[type="file"] {
     height: 50vh;
   }
 
-  .wrapper .right.reseptit {
-    /* overflow: visible; */
-  }
+ 
 
   .small-profile {
     font-size: 10px;
@@ -1214,18 +1261,24 @@ input[type="file"] {
       font-size: 25px;
       text-align: center;
       margin-top: 80px;
+      
     }
 
     .search-field {
       display: none;
       position: absolute;
       top: 150px;
-      right: 0;
-      width: 95%;
+      left: 150px;
+      width: 290px;
       z-index: 50;
       animation: fadeInAnimation ease 0.5s;
       animation-iteration-count: 1;
       animation-fill-mode: forwards;
+      border-color: #2bae66ff;
+    }
+
+    .search-field:focus {
+      color: #2bae66ff;
     }
 
     .wrapper .caption .button:hover {
@@ -1235,16 +1288,19 @@ input[type="file"] {
     #search-btn-submit {
       visibility: hidden;
       position: absolute;
-      right: -40px;
-      top: 133px;
+      right: 100px;
+      top: 129px;
       z-index: 15;
       font-size: 14px;
       background-color: #2bae66ff;
       opacity: 60%;
+      padding: 12px 16px;
+      
     }
 
     #search-button {
       margin-top: 130px;
+      padding: 10px 15px
     }
 
     #search-btn-submit:hover {
@@ -1352,4 +1408,4 @@ input[type="file"] {
     margin-top: 20px;
   }
 } */
-}
+
