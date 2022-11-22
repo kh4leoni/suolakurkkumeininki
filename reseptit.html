@@ -49,19 +49,19 @@
         <div class="caption">
           <div class="button">
             <form class="search-formi" action="">
-            <input
-              type="search"
-              id="search"
-              class="form-control search-field hakukomponentti"
-              placeholder="Etsi reseptejä.."
-            />
-            <button
-              class="btn btn-primary search-button hakukomponentti"
-              id="search-btn-submit"
-            >
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+              <input
+                type="search"
+                id="search"
+                class="form-control search-field hakukomponentti"
+                placeholder="Etsi reseptejä.."
+              />
+              <button
+                class="btn btn-primary search-button hakukomponentti"
+                id="search-btn-submit"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
             <button class="btn btn-primary search-button" id="search-button">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
             </button>
@@ -78,221 +78,41 @@
           </div>
         </div>
         <div class="image pickle"></div>
-        <div class="caption mt-60">
+        <div class="caption mt-60 slider">
           <a href="./uusiresepti.html" class="pen-icon-link"
             ><i class="fa-solid fa-pen-to-square kyna-icon"></i
           ></a>
-          <h1>Reseptit</h1>
-          <button class="toggle-button"
-            >
+          
+          <div class="container reseptit-carousel">
+            <div id="carouselExampleControls" class="carousel slide karuselli" data-bs-ride="carousel">
+              <div class="carousel-inner" id="carousel-row">
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          <button class="toggle-button">
             <i class="fa-solid fa-bars menu-nappi"></i>
             <!-- <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span> -->
           </button>
           <a href="#" class="up-icon"><i class="fa-solid fa-circle-up"></i></a>
-
-          <div class="container mt-16">
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-bs-interval="5000"
-              data-bs-touch="true"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-12 col-md-6 col-lg 4">
-                      <div class="card">
-                        <img
-                          src="./images/kurkkua-ja-leipaa.jpg"
-                          alt="Kurkkua ja leipää"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Kurkkua ja leipää</h5>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aspernatur veritatis.
-                          </p>
-                          <a href="#" class="btn btn-primary">Suurenna</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg 4">
-                      <div class="card">
-                        <img
-                          src="./images/kurkkua-ja-leipaa.jpg"
-                          alt="Kurkkua ja leipää"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Kurkkua ja leipää</h5>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aspernatur veritatis.
-                          </p>
-                          <a href="#" class="btn btn-primary">Suurenna</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg 4">
-                      <div class="card">
-                        <img
-                          src="./images/kurkkua-ja-leipaa.jpg"
-                          alt="Kurkkua ja leipää"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Kurkkua ja leipää</h5>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aspernatur veritatis.
-                          </p>
-                          <a href="#" class="btn btn-primary">Suurenna</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-12 col-md-6 col-lg 4">
-                      <div class="card">
-                        <img
-                          src="./images/kurkkua-ja-leipaa.jpg"
-                          alt="Kurkkua ja leipää"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Kurkkua ja leipää</h5>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aspernatur veritatis.
-                          </p>
-                          <a href="#" class="btn btn-primary">Suurenna</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg 4">
-                      <div class="card">
-                        <img
-                          src="./images/kurkkua-ja-leipaa.jpg"
-                          alt="Kurkkua ja leipää"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Kurkkua ja leipää</h5>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aspernatur veritatis.
-                          </p>
-                          <a href="#" class="btn btn-primary">Suurenna</a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg 4">
-                      <div class="card">
-                        <img
-                          src="./images/kurkkua-ja-leipaa.jpg"
-                          alt="Kurkkua ja leipää"
-                          class="card-img-top"
-                        />
-                        <div class="card-body">
-                          <h5 class="card-title">Kurkkua ja leipää</h5>
-                          <p class="card-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aspernatur veritatis.
-                          </p>
-                          <a href="#" class="btn btn-primary">Suurenna</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col-12 col-md-6 col-lg 4">
-                  <div class="card">
-                    <img
-                      src="./images/kurkkua-ja-leipaa.jpg"
-                      alt="Kurkkua ja leipää"
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Kurkkua ja leipää</h5>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aspernatur veritatis.
-                      </p>
-                      <a href="#" class="btn btn-primary">Suurenna</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg 4">
-                  <div class="card">
-                    <img
-                      src="./images/kurkkua-ja-leipaa.jpg"
-                      alt="Kurkkua ja leipää"
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Kurkkua ja leipää</h5>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aspernatur veritatis.
-                      </p>
-                      <a href="#" class="btn btn-primary">Suurenna</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg 4">
-                  <div class="card">
-                    <img
-                      src="./images/kurkkua-ja-leipaa.jpg"
-                      alt="Kurkkua ja leipää"
-                      class="card-img-top"
-                    />
-                    <div class="card-body">
-                      <h5 class="card-title">Kurkkua ja leipää</h5>
-                      <p class="card-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aspernatur veritatis.
-                      </p>
-                      <a href="#" class="btn btn-primary">Suurenna</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
+    
+   
+  </div>
 
     <script src="./app.js"></script>
-    <script src="./script.js"></script>
+    <script src="./reseptit.js"></script>
     <!-- <script src="./searchbar.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
@@ -301,3 +121,200 @@
     ></script>
   </body>
 </html>
+
+<!-- <div class="container mt-16">
+  <div
+    id="carouselExampleControls"
+    class="carousel slide"
+    data-bs-interval="5000"
+    data-bs-touch="true"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row carousel-row">
+          <div class="col-12 col-md-6 col-lg 4">
+            <div class="card">
+              <img
+                src="./images/kurkkua-ja-leipaa.jpg"
+                alt="Kurkkua ja leipää"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kurkkua ja leipää</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aspernatur veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Suurenna</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg 4">
+            <div class="card">
+              <img
+                src="./images/kurkkua-ja-leipaa.jpg"
+                alt="Kurkkua ja leipää"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kurkkua ja leipää</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aspernatur veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Suurenna</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg 4">
+            <div class="card">
+              <img
+                src="./images/kurkkua-ja-leipaa.jpg"
+                alt="Kurkkua ja leipää"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kurkkua ja leipää</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aspernatur veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Suurenna</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg 4">
+            <div class="card">
+              <img
+                src="./images/kurkkua-ja-leipaa.jpg"
+                alt="Kurkkua ja leipää"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kurkkua ja leipää</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aspernatur veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Suurenna</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg 4">
+            <div class="card">
+              <img
+                src="./images/kurkkua-ja-leipaa.jpg"
+                alt="Kurkkua ja leipää"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kurkkua ja leipää</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aspernatur veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Suurenna</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg 4">
+            <div class="card">
+              <img
+                src="./images/kurkkua-ja-leipaa.jpg"
+                alt="Kurkkua ja leipää"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Kurkkua ja leipää</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Aspernatur veritatis.
+                </p>
+                <a href="#" class="btn btn-primary">Suurenna</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="carousel-item">
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg 4">
+        <div class="card">
+          <img
+            src="./images/kurkkua-ja-leipaa.jpg"
+            alt="Kurkkua ja leipää"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kurkkua ja leipää</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur veritatis.
+            </p>
+            <a href="#" class="btn btn-primary">Suurenna</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg 4">
+        <div class="card">
+          <img
+            src="./images/kurkkua-ja-leipaa.jpg"
+            alt="Kurkkua ja leipää"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kurkkua ja leipää</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur veritatis.
+            </p>
+            <a href="#" class="btn btn-primary">Suurenna</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg 4">
+        <div class="card">
+          <img
+            src="./images/kurkkua-ja-leipaa.jpg"
+            alt="Kurkkua ja leipää"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Kurkkua ja leipää</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aspernatur veritatis.
+            </p>
+            <a href="#" class="btn btn-primary">Suurenna</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<button
+  class="carousel-control-prev"
+  type="button"
+  data-bs-target="#carouselExampleControls"
+  data-bs-slide="prev"
+>
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+</button>
+<button
+  class="carousel-control-next"
+  type="button"
+  data-bs-target="#carouselExampleControls"
+  data-bs-slide="next"
+>
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+</button>
+</div> -->

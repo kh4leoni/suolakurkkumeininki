@@ -2,7 +2,9 @@ const backgroundImage = document.querySelectorAll(".kurkku")[0];
 let profileOpen = false;
 const wrapper = document.querySelectorAll(".wrapper")[0];
 
+
 const reviewBtn = document.getElementById("review-btn");
+const reviewDiv = document.querySelector('.review-btn-div');
 const reviewCard = document.getElementById("review-card");
 const leftSide = document.getElementById("left-side");
 
@@ -17,6 +19,7 @@ let uploadedImage;
 
 reviewBtn.addEventListener("click", () => {
   reviewCard.classList.toggle("active");
+  reviewDiv.classList.toggle('active');
 });
 
 
@@ -111,8 +114,9 @@ function renderReviews() {
   let cards = " ";
 
   data.forEach((item) => {
+  
     cards += `
-  <div class="col-12 col-md-6 col-lg-4"s>
+  <div class="col-12 col-md-6 col-lg-4">
       <div class="card">
       <div class="img-wrapper">
       <img class="w-100 arvostelu-img" src="${
