@@ -23,8 +23,10 @@ function openNavBar() {
   menuButton.addEventListener("click", () => {
     if (navLink) {
       navLink.classList.toggle("active");
+      menuButton.classList.toggle('active');
     } else if (newNavLink) {
       newNavLink.classList.toggle("active");
+      menuButton.classList.toggle('active');
     }
   });
 }
