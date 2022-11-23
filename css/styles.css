@@ -145,11 +145,12 @@ body {
 .review-btn-div {
   color: black;
   border-radius: 1000px;
-  position: absolute;
+  position: fixed;
   top: 100px;
   left: 20px;
   z-index: 11;
   display: inline-block;
+  border: solid 2px white;
 }
 
 .review-btn {
@@ -514,13 +515,14 @@ h4 {
   position: fixed;
   color: #fcf6f5ff;
   left: 20px;
-  top: 100px;
-  z-index: 11;
+  top: 100px; 
   font-size: 20px;
   background-color: rgba(43, 174, 103, 0.9);
   padding: 15px;
   border-radius: 100px;
   font-weight: 300;
+  border: solid 2px white;
+   z-index: 11;
 }
 
 .kyna-icon:hover {
@@ -802,7 +804,7 @@ h4 {
 .recipe-card-btn {
   border: solid 2px white;
   padding: 10px 25px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 .card-recipe {
@@ -1259,8 +1261,8 @@ input[type="file"] {
     border-radius: 0;
   }
   .kyna-icon {
-    left: 20px;
-    top: 30px;
+    left: 15px;
+    top: 25px;
   }
   .wrapper .haku .caption .button {
     background: none;
