@@ -15,20 +15,18 @@ body {
   overflow: hidden;
 }
 
-.size-test {
-  width: 100%;
-  height: 100%;
+.flex-card {
+  flex-direction: row;
+  justify-content: center;
 }
 
 .reseptit-carousel {
   position: absolute;
-  top:80px;
+  top: 80px;
   width: 100%;
-  height: 100vh!important;
+  height: 100vh !important;
   padding: 0;
 }
-
-
 
 #image-input {
   position: absolute;
@@ -36,7 +34,7 @@ body {
 }
 
 .resepti-card-img {
-  border-radius: 0!important;
+  border-radius: 0 !important;
 }
 
 .wrapper .right.arvostelut {
@@ -44,7 +42,6 @@ body {
   height: auto;
   padding-top: calc(25vh - 100px);
 }
-
 
 .wrapper .left.arvostelut {
   height: auto;
@@ -55,12 +52,18 @@ body {
   position: absolute;
   top: 0;
   z-index: 12;
-  background-color: rgba(0, 0, 0, 0.11724439775910369);
+  background-color: rgba(43, 172, 103, 0.8);
   width: 100%;
   height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wrapper .right.arvostelut .navb {
+
+  background-color: rgba(0, 0, 0, 0.1);
+
 }
 
 .wrapper .left .header {
@@ -146,7 +149,7 @@ body {
   top: 100px;
   left: 20px;
   z-index: 11;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .review-btn {
@@ -157,6 +160,10 @@ body {
   background-color: rgba(43, 174, 103, 0.8724439775910369) !important;
   padding: 0 !important;
   font-size: 20px;
+}
+
+.review-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9724439775910369) !important;
 }
 
 #submit-review-btn {
@@ -234,7 +241,7 @@ body {
 }
 
 .testaillaan {
-  background-image: url("../images/harmaatausta-haarukka.jpg");
+  background-image: url("../images/putoavat-kurkut.jpg");
 }
 
 .wrapper .caption {
@@ -265,6 +272,14 @@ body {
 
 .wrapper .right .caption {
   padding: 0 15px;
+}
+
+.jumbo-h1 {
+  font-size: 45px !important;
+}
+
+.jumbo-p {
+  font-size: 24px !important;
 }
 
 .wrapper .left .caption h1 {
@@ -413,6 +428,10 @@ body {
   hyphens: auto;
 }
 
+.wrapper .haku .caption .button {
+  background: none;
+}
+
 .wrapper .right .navb .navi-link:hover {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
@@ -439,11 +458,10 @@ body {
   width: 100%;
   height: 100vh;
   padding: 0;
-  
 }
 
 .esittely {
- background-color: rgba(43, 174, 103, 0.9);
+  background-color: rgba(43, 174, 103, 0.9);
 }
 
 /* .esittely:hover {
@@ -454,10 +472,8 @@ body {
 
 .esittely h3,
 h4 {
-  
   color: black;
 }
-
 
 .wrapper .side::before {
   background: linear-gradient(
@@ -495,10 +511,22 @@ h4 {
 }
 
 .kyna-icon {
-  position: absolute;
-  top: 0.8em;
-  left: 0.75em;
-  font-size: 28px;
+  position: fixed;
+  color: #fcf6f5ff;
+  left: 20px;
+  top: 100px;
+  z-index: 11;
+  font-size: 20px;
+  background-color: rgba(43, 174, 103, 0.9);
+  padding: 15px;
+  border-radius: 100px;
+  font-weight: 300;
+}
+
+.kyna-icon:hover {
+  background-color: rgba(0, 0, 0, 0.77735644257703087);
+  animation: forwards;
+  transition: 0.3s;
 }
 
 .cards-wrapper {
@@ -725,10 +753,73 @@ h4 {
   height: 300px;
 }
 
-.img-wrapper-reseptit {
-  height: 100vh;
+/* .img-wrapper-reseptit {
+  width: 100%;
+  height: 63.3vh;
+  position: sticky;
+  background-color: #2bae66ff;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+} */
+
+.resepti-card-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
+#carousel-slide1 {
+  height: 70vh;
+  background-image: url("../images/kokko.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+#carousel-slide2 {
+  height: 70vh;
+  background-image: url("../images/Kurkkuja-lautasella.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#carousel-slide3 {
+  height: 70vh;
+  background-image: url("../images/123.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+#carousel-slide4 {
+  height: 70vh;
+  background-image: url("../images/Kurkku.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.recipe-card-btn {
+  border: solid 2px white;
+  padding: 10px 25px;
+}
+
+.card-recipe {
+  background-color: rgba(43, 174, 103, 1) !important;
+  color: #fcf6f5ff;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+  height: 23.2vh;
+
+  border-top: solid white 1px;
+}
+
+.card-recipe h5 {
+  font-size: 30px;
+}
 
 .wrapper .right.etusivu .flexnav {
   background-color: rgba(43, 174, 102, 0.8);
@@ -771,6 +862,11 @@ h4 {
 
 input[type="file"] {
   display: none;
+}
+
+.reseptit-h1 {
+  display: none;
+  justify-content: center;
 }
 
 .thank-you-message {
@@ -839,18 +935,10 @@ input[type="file"] {
   font-size: 10px;
 }
 
-.reseptit .row {
-  flex-wrap: nowrap;
-  z-index: 1;
-}
-
-
-
 .reseptit .carousel-control-prev {
   position: absolute;
   height: 400px;
   top: 100px;
-  
 }
 
 .carousel-control-prev-icon {
@@ -919,10 +1007,40 @@ input[type="file"] {
 }
 
 @media screen and (max-width: 1200px) {
+  
+
+  .recipe-card-btn {
+    font-size: 10px!important;
+  }
+
+
+
+  .reseptit-h1 {
+    display: flex;
+  }
+
+  .reseptit-carousel {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .card-title {
+    font-size: 20px!important;
+  }
+
+ .card-text {
+    font-size: 13px!important;
+  }
+
+  .wrapper .right.reseptit {
+    height: auto;
+  }
 
   .esittely {
     border-radius: 10px;
-   }
+  }
 
   .wrapper .left .caption {
     width: 100%;
@@ -949,18 +1067,17 @@ input[type="file"] {
     margin-top: 120px;
   }
 
-  .review-btn-div.active {    
+  .review-btn-div.active {
     position: fixed;
     left: 20px;
     top: 51vh;
-    color: rgba(0, 0, 0, 0.3724439775910369)
+    color: rgba(0, 0, 0, 0.3724439775910369);
   }
 
   .review-btn.active {
-    background: rgba(255, 255, 255, 0.6)!important;
+    background: rgba(255, 255, 255, 0.6) !important;
     color: #2bae66ff;
   }
-
 
   .arvostelu-kentta {
     margin-bottom: 0;
@@ -975,7 +1092,6 @@ input[type="file"] {
     position: absolute;
     right: 10px;
     top: 2px;
-    
   }
 
   .jar {
@@ -1015,8 +1131,6 @@ input[type="file"] {
     margin-top: 10px;
     margin-right: 10px;
     z-index: 20;
-    
-     
   }
   .search-button {
     margin-bottom: 60px;
@@ -1088,7 +1202,6 @@ input[type="file"] {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     font-size: 20px;
-    
   }
 
   .toggle-button.active {
@@ -1099,8 +1212,6 @@ input[type="file"] {
     border-radius: 0;
     margin: 0;
   }
-
- 
 
   /* .wrapper .right .navb .navi-link:hover {
     background-color: rgba(0, 0, 0, 0.8);
@@ -1193,6 +1304,26 @@ input[type="file"] {
   }
 
   @media screen and (max-width: 700px) {
+    .card-recipe {
+      height: auto;
+    }
+
+    .jumbo-h1 {
+      font-size: 20px !important;
+      padding: 0 !important;
+    }
+
+    .jumbo-p {
+      font-size: 15px !important;
+    }
+
+    .jumbotron.fluid {
+      width: 51%;
+      padding: 0 !important;
+      margin: 0;
+      margin-right: 0 !important;
+    }
+
     .wrapper .caption .button.login {
       margin: auto;
       width: 80%;
@@ -1261,8 +1392,8 @@ input[type="file"] {
       display: none;
       position: absolute;
       top: 150px;
-      left: 150px;
-      width: 290px;
+      left: 70px;
+      width: 220px;
       z-index: 50;
       animation: fadeInAnimation ease 0.5s;
       animation-iteration-count: 1;
@@ -1281,7 +1412,7 @@ input[type="file"] {
     #search-btn-submit {
       visibility: hidden;
       position: absolute;
-      right: 100px;
+      right: 55px;
       top: 129px;
       z-index: 15;
       font-size: 14px;
@@ -1309,6 +1440,22 @@ input[type="file"] {
   }
 
   @media screen and (max-height: 650px) {
+    .jumbotron.fluid {
+      width: 51%;
+      padding: 0 !important;
+      margin: 0;
+      margin-right: 0 !important;
+    }
+
+    .jumbo-h1 {
+      font-size: 20px !important;
+      padding: 0 !important;
+    }
+
+    .jumbo-p {
+      font-size: 15px !important;
+    }
+
     #profile {
       top: 0px;
       height: 100%;
@@ -1343,6 +1490,14 @@ input[type="file"] {
 
     .wrapper .left.arvostelut.active {
       height: auto;
+    }
+
+    #login-caption {
+      height: 10%;
+      top: -80px;
+    }
+    .button.login {
+      font-size: 10px;
     }
   }
 }

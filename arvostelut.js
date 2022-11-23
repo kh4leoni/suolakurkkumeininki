@@ -20,6 +20,7 @@ let uploadedImage;
 reviewBtn.addEventListener("click", () => {
   reviewCard.classList.toggle("active");
   reviewDiv.classList.toggle('active');
+  reviewBtn.classList.toggle('active');
 });
 
 
