@@ -121,11 +121,12 @@ function openRecipe(id) {
     if (`info-button${recipe.id}` === id) {
       let infoDiv = `<div class="modal-container">
       <div class="modal-header">
-      <div class="info-img-wrapper">
-      <img class="info-img" src=${recipe.img}>
-      </div>
+      
       <div>
         <h3 class="modal-title">${recipe.title}</h3>
+      </div>
+      <div class="info-img-wrapper">
+      <img class="info-img" src=${recipe.img}>
       </div>
         </div>
       </div>
