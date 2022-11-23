@@ -48,12 +48,12 @@
         <div class="image etusivu-image"></div>
         <div class="caption" id="login-caption">
           <form action="" class="button login">
-            <h3>Kirjaudu sisään</h3>
-                          <input type="text" class="form-control mt-3" placeholder="Käyttäjätunnus"><br>
-                <input type="text" class="form-control" placeholder="Salasana">
+            <h3 id="kirjaudu-sisaan">Kirjaudu sisään</h3>
+                          <input type="text" class="form-control mt-3 login-input-text" placeholder="Käyttäjätunnus"><br>
+                <input type="text" class="form-control login-input-text" placeholder="Salasana" id="input-password">
                 <p id="wrong-password"></p>
                 <button class="btn mt-5" id="login-button" type="button">Kirjaudu</button> 
-                <p class="mt-3">Käytä kirjautumiseen:</p>   
+                <p class="mt-3" id="login-paragraph">Käytä kirjautumiseen:</p>   
             <div class="login-icon-div">
               <a class="login-icon" href="#"><i class="fa-brands fa-google"></i></a>
               <a class="login-icon" href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -85,7 +85,7 @@
           
           <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-4 jumbo-h1">Tervetuloa suolakurkkutietokantaan!</h1>
+              <h1 class="display-4 jumbo-h1 big-secret">Tervetuloa suolakurkkutietokantaan!</h1><h1 class="display-4 jumbo-h1 hidden-sktk">Tervetuloa SKTK:hon!</h1>
               <p class="lead jumbo-p">Voit kirjautua sisään tai jatkaa kirjautumatta. Sivustolle on tarkoitus kerätä arvosteluja kaikista käyttäjien maistelemista suolakurkuista. Tavoitteena on maistella maailman jokainen suolakurkku!</p>
             </div>
           </div>
