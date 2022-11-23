@@ -76,6 +76,7 @@ function renderRecipes() {
      </p>
      <a href="#" class="btn btn-primary recipe-card-btn">Suurenna</a>
    </div>
+   
       </div>
       </div>
       
