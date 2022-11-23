@@ -1,3 +1,5 @@
+
+
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
@@ -290,11 +292,15 @@ body {
 }
 
 .jumbo-h1 {
-  font-size: 45px !important;
+  font-size: 30px !important;
+  width: 90%;
+  margin: 15px auto 0 auto;
 }
 
 .jumbo-p {
   font-size: 24px !important;
+  width: 90%;
+  margin: 20px auto;
 }
 
 .wrapper .left .caption h1 {
@@ -371,6 +377,29 @@ body {
   box-shadow: inset 0 1px 1px #fcf6f5ff, 0 0 8px #2bae66ff;
 }
 
+.btn:focus {
+  box-shadow: inset 0 1px 1px #fcf6f5ff, 0 0 8px #2bae66ff!important;
+  
+}
+
+.btn:disabled {
+  color: #2bae66ff!important;
+  background-color: #2bae66ff!important;
+}
+
+
+
+.btn:active {
+  background-color: #2bae66ff!important;
+}
+
+.btn:focus,.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+
+
+
 .login {
   display: flex;
   flex-direction: column;
@@ -379,8 +408,9 @@ body {
   height: 400px;
 }
 
-.jumbotron {
-  word-wrap: break-word;
+.jumbotron-fluid {
+  word-wrap: break-word!important;
+
 }
 
 .login h3 {
@@ -523,6 +553,7 @@ h4 {
   text-transform: uppercase;
   font-weight: 600;
   padding: 5px 25px;
+  
 }
 
 .kyna-icon {
@@ -687,6 +718,21 @@ h4 {
   letter-spacing: 1.2px;
 }
 
+
+.clickable {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display:none;
+}
+
+.clickable.active {
+  display:flex;
+}
+
 .new-recipe-flexer {
   display: flex;
   width: 100%;
@@ -725,7 +771,8 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  border: solid 1px black
+  border: solid 1px rgba(43, 174, 103, 0.5);
+  border-radius: 15px;
   
   
 }
@@ -738,14 +785,29 @@ h4 {
   
 }
 
+.recipe-card-btn:hover {
+  border-color: white!important;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s;
+  	opacity: 0;
+}
+
 .recipe-info-box {
   position: absolute; 
-  border: solid 10px rgba(42, 172, 103, 0.8);
-  border-radius: 20px;
-  z-index: 50;
+ 
+  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4);;
+  border-radius: 0;
+  z-index: 15;
   width: 90%;
   height: 40%;
-  background-color: white;
+  border-radius: 15px;
+  
+
+  
+background: rgb(43,174,102);
+background: linear-gradient(0deg, rgba(43,174,102,1) 5%, rgba(255,255,255,0.9867121848739496) 20%);
   display: none;
 
 }
@@ -757,15 +819,18 @@ h4 {
   justify-content: center;
 }
 
-.modal-content {
-  
-  border: solid 1px black;
-  padding: 10px;
+.modal-content {  
+  width: 80%;
+  padding: 40px 20px;
+  font-size: 24px;
 }
 
 .modal-title {
   align-self: flex-end;
-  border: solid 1px black;
+  margin-top: 20px;
+  font-size: 30px;
+  text-align: center;
+  
 }
 
 .recipe-info-box.active {
@@ -822,6 +887,8 @@ h4 {
   color: white;
 }
 
+
+
 .img-wrapper {
   height: 300px;
 }
@@ -873,8 +940,10 @@ h4 {
 
 
 .recipe-card-btn {
-  border: solid 2px white;
-  padding: 10px 25px;
+  border: solid 1px white;
+  padding: 10px 20px;
+  font-size: 12px;
+
   
 }
 
@@ -889,7 +958,7 @@ background-size: cover;
 .card-recipe {
   background-color: rgba(43, 174, 103, 1) !important;
   color: #fcf6f5ff;
-  font-size: 24px;
+  font-size: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -898,10 +967,13 @@ background-size: cover;
   padding-bottom: 40px!important;
 
   border-top: solid white 1px;
+  overflow: hidden;
 }
 
 .card-recipe h5 {
-  font-size: 30px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1.3px;
 }
 
 .wrapper .right.etusivu .flexnav {
@@ -1009,6 +1081,27 @@ input[type="file"] {
   left: 10px;
 }
 
+.modal-a {
+  text-decoration: none;
+  color: white;
+  border-color: white!important;
+  
+  padding: 15px 40px
+}
+
+.modal-a:visited {
+  text-decoration: none;
+  color: white;
+  border-color: white!important;
+
+}
+
+.modal-a:active {
+  text-decoration: none;
+  color: white;
+  border-color: white!important;
+}
+
 .new-recipe-sktk .logo:hover {
   color: white;
 }
@@ -1093,6 +1186,34 @@ input[type="file"] {
 
 @media screen and (max-width: 1200px) {
   
+  .recipe-info-box {
+    height: 90%;
+    flex-direction: column;
+    
+  }
+
+  .info-img-wrapper {
+    display: none;
+  }
+
+  .info-img {
+    display:none;
+  }
+
+  .modal-title {
+    font-size: 22px;
+    font-weight: bold;
+    
+  }
+
+  .modal-content {
+    font-size: 15px;
+    margin-top: 0;
+    padding-top: 5px!important;
+    padding-bottom: 0!important;
+    text-align: center;
+    align-self: center;
+  }
 
   .recipe-card-btn {
     font-size: 10px!important;
@@ -1557,7 +1678,12 @@ input[type="file"] {
     }
   }
 
+
+
+
   @media screen and (max-height: 650px) {
+
+  
     .jumbotron.fluid {
       width: 51%;
       padding: 0 !important;

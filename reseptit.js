@@ -1,8 +1,8 @@
-
 const carouselRow = document.getElementById("carousel-row");
-const recipeModal = document.getElementById('recipe-modal');
-const carousel = document.querySelector('.carousel')
-
+const recipeModal = document.getElementById("recipe-modal");
+const carousel = document.querySelector(".carousel");
+const left = document.querySelector(".left");
+const clickable = document.querySelector(".clickable");
 
 let recipes = [
   {
@@ -23,7 +23,7 @@ let recipes = [
     id: 3,
     title: "Suolakurkkua, leipää ja possua",
     content:
-      "Siivuta läjä suolakurkkuja pitkittäin. Ota esiin sopivan iso puutarjotin. Asettele annoksen tähti keskelle puualustaa ja laita toiselle sivulle hyvin kypsytettyä porsaan lihaa ja toiselle puolelle täysjyväleipää. Sivutuotteet ovat vapaavalintaisia, pääasia että keskellä tarjotinta on suolakurkkua",
+      "Siivuta läjä suolakurkkuja pitkittäin. Ota esiin sopivan iso puutarjotin. Asettele annoksen tähti keskelle puualustaa ja laita toiselle sivulle hyvin kypsytettyä porsaan lihaa ja toiselle puolelle täysjyväleipää.",
     img: "./images/123.jpg",
   },
   {
@@ -55,7 +55,7 @@ function renderRecipes() {
    </p>
    <button class="btn btn-primary recipe-card-btn" id="info-button${
      recipe.id
-   }">Suurenna</button>
+   }"><a class="modal-a" href="#">Suurenna</a></button>
  </div>
     </div>
     </div>
@@ -67,8 +67,7 @@ function renderRecipes() {
       <div class="carousel-item" id="${recipe.id}">
       <div class="card">
       <div id="carousel-slide${recipe.id}">
-      </div>
-      
+      </div>      
       <div class="card-body card-recipe">
     <h5 class="card-title">${recipe.title}</h5>
      <p class="card-text">
@@ -76,7 +75,7 @@ function renderRecipes() {
      </p>
      <button class="btn btn-primary recipe-card-btn" id="info-button${
        recipe.id
-     }">Suurenna</button>
+     }"><a class="modal-a" href="#">Suurenna</a></button>
    </div>
    
       </div>
@@ -92,37 +91,33 @@ function renderRecipes() {
 
 const infoBtns = document.querySelectorAll(".recipe-card-btn");
 
-infoBtns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    recipeModal.classList.toggle('active')
-    console.log(recipeModal.classList)
-    if (btn.innerHTML === 'Sulje') {
-      btn.innerHTML = 'Suurenna'
+infoBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    recipeModal.classList.toggle("active");
+    clickable.classList.toggle("active");
+    carousel.style.opacity = 0.4;
+    carousel.style.transition = "0.4s";
+    btn.style.pointerEvents = "none";
+
+    clickable.addEventListener("click", () => {
       carousel.style.opacity = 1;
-    } else {
-      btn.innerHTML = 'Sulje';
-      carousel.style.opacity = 0.4;
-      carousel.style.transition = "0.4s";
-    }
-    
-    
-    openRecipe(btn.id)
-    
-   
-  
-   
-  
-   
- 
-  })
-})
+      recipeModal.classList.remove("active");
+      clickable.classList.remove("active");
+      btn.style.pointerEvents = "auto";
+    });
 
+    openRecipe(btn.id);
+  });
+});
 
+left.addEventListener("click", () => {
+  if (recipeModal.classList.contains("active")) {
+    recipeModal.classList.remove("active");
+  }
+});
 
 function openRecipe(id) {
-  
-
-  recipes.forEach(recipe => {
+  recipes.forEach((recipe) => {
     if (`info-button${recipe.id}` === id) {
       let infoDiv = `<div class="modal-container">
       <div class="modal-header">
@@ -137,64 +132,10 @@ function openRecipe(id) {
       <div class="modal-content">
         <p class="modal-text-content">${recipe.content}</p>
       </div>
-    </div>`
-    
-    recipeModal.innerHTML = infoDiv;
+    </div>`;
+
+      recipeModal.innerHTML = infoDiv;
     }
-    
-   
-  })
-
-  
-
+  });
 }
 
-function closeInfo() {
-  btn.forEach(btn => {
-    btn.addEventListener('click', () => {
-      console.log(btn.innerHTML)
-      if (btn.innerHTML === 'Sulje') {
-        btn.innerHTML = 'Suurenna'
-      }
-    })
-  })
-}
-
-
-// `<div class="carousel-item size-test" id="${recipe.id}">
-// <div class="card">
-// <div class="img-wrapper-reseptit">
-//   <img
-//     src=${recipe.img}
-//     alt="Kurkkua ja leipää"
-//     class="card-img-top resepti-card-img"
-//   />
-//   </div>
-//   <div class="card-body card-recipe">
-//     <h5 class="card-title">${recipe.title}</h5>
-//     <p class="card-text">
-//       ${recipe.content}
-//     </p>
-//     <a href="#" class="btn btn-primary recipe-card-btn">Suurenna</a>
-//   </div>
-// </div>
-// </div>`
-
-// `<div class="carousel-item active size-test" id="${recipe.id}">
-// <div class="card">
-// <div class="img-wrapper-reseptit">
-//   <img
-//     src=${recipe.img}
-//     alt="Kurkkua ja leipää"
-//     class="card-img-top resepti-card-img"
-//   />
-//   </div>
-//   <div class="card-body card-recipe">
-//     <h5 class="card-title">${recipe.title}</h5>
-//     <p class="card-text">
-//       ${recipe.content}
-//     </p>
-//     <a href="#" class="btn btn-primary recipe-card-btn">Suurenna</a>
-//   </div>
-// </div>
-// </div>`
