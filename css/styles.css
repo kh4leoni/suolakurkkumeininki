@@ -802,6 +802,7 @@ h4 {
 .recipe-card-btn {
   border: solid 2px white;
   padding: 10px 25px;
+  margin-bottom: 25px;
 }
 
 .card-recipe {
@@ -813,6 +814,7 @@ h4 {
   align-items: center;
   justify-content: center;  
   height: 23.2vh;
+  padding-bottom: 40px!important;
 
   border-top: solid white 1px;
 }
@@ -1024,6 +1026,7 @@ input[type="file"] {
     top: 0;
     width: 100%;
     padding: 0;
+    
   }
 
   .card-title {
@@ -1256,7 +1259,7 @@ input[type="file"] {
     border-radius: 0;
   }
   .kyna-icon {
-    left: 130px;
+    left: 20px;
     top: 30px;
   }
   .wrapper .haku .caption .button {
@@ -1306,6 +1309,7 @@ input[type="file"] {
   @media screen and (max-width: 700px) {
     .card-recipe {
       height: auto;
+      
     }
 
     .jumbo-h1 {
