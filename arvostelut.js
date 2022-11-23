@@ -25,10 +25,11 @@ reviewBtn.addEventListener("click", () => {
 
 
 
+
 let data = [
   {
     id: 1,
-    name: "Villen Rapsakat",
+    name: "Villen Rapsakka",
     img: "./images/villen_rapsakat.png",
     tyyli: "Venäläinen suolakurkku",
     maku: 2,
@@ -52,51 +53,51 @@ let data = [
   },
   {
     id: 4,
-    name: "Villen Rapsakat",
-    img: "./images/villen_rapsakat.png",
+    name: "Villen Lupsakka",
+    img: "./images/villen-lupsakka.jpg",
     tyyli: "Venäläinen suolakurkku",
     maku: 2,
     suuTuntuma: 1,
   },
   {
     id: 5,
-    name: "Euro East",
-    img: "./images/euro-east-suolakurkku.jpg",
-    tyyli: "Lohkottu suolakurkku",
-    maku: 3,
-    suuTuntuma: 3,
+    name: "Torkkelin Suolakurkku",
+    img: "./images/torkkelin-perhe.jpg",
+    tyyli: "Venäläinen suolakurkku",
+    maku: 4,
+    suuTuntuma: 4,
   },
   {
-    id: 5,
-    name: "Euro East",
-    img: "./images/euro-east-suolakurkku.jpg",
-    tyyli: "Lohkottu suolakurkku",
+    id: 6,
+    name: "Orzech Suolakurkku",
+    img: "./images/orzech.jpg",
+    tyyli: "Venäläinen suolakurkku",
     maku: 3,
-    suuTuntuma: 3,
+    suuTuntuma: 2,
   },
   {
-    id: 5,
-    name: "Euro East",
-    img: "./images/euro-east-suolakurkku.jpg",
+    id: 7,
+    name: "Salvest Suolakurkku",
+    img: "./images/salvest.jpg",
     tyyli: "Lohkottu suolakurkku",
-    maku: 3,
-    suuTuntuma: 3,
+    maku: 2,
+    suuTuntuma: 4,
   },
   {
-    id: 5,
-    name: "Euro East",
-    img: "./images/euro-east-suolakurkku.jpg",
-    tyyli: "Lohkottu suolakurkku",
-    maku: 3,
-    suuTuntuma: 3,
+    id: 8,
+    name: "Myrttisen Suolakurkku",
+    img: "./images/myrttinen-suolakurkku.jpg",
+    tyyli: "Perinteinen suolakurkku",
+    maku: 5,
+    suuTuntuma: 5,
   },
   {
-    id: 5,
-    name: "Euro East",
-    img: "./images/euro-east-suolakurkku.jpg",
+    id: 9,
+    name: "Marjax",
+    img: "./images/marjax.jpg",
     tyyli: "Lohkottu suolakurkku",
-    maku: 3,
-    suuTuntuma: 3,
+    maku: 4,
+    suuTuntuma: 4,
   },
 ];
 
@@ -233,7 +234,7 @@ image_input.addEventListener("change", function () {
 function addNewReview() {
   console.log(uploadedImage);
   if (uploadedImage === undefined) {
-    uploadedImage = "./images/no-image.png";
+    uploadedImage = "./images/ei-kuvaa-kurkku.jpg";
   }
   let newId = data.length + 1;
   const newPickle = {

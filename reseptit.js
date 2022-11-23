@@ -10,14 +10,14 @@ let recipes = [
     title: "Suolakurkkunuotio",
     content:
       "Ota purkista vähintään viisi pienehköä suolakurkkua. Aseta ne neliön muotoiselle lautaselle nuotion kaltaiseen asetelmaan. Tulitikut voit kuitenkin säästää, sillä tämä nuotio menee suorinta tietä herkkusuuhun.",
-    img: "./images/kurkkukokko.jpeg",
+    img: "./images/kurkkukokko.jpg",
   },
   {
     id: 2,
     title: "Suolakurkkua lautasella",
     content:
       "Puolita kaksi suolakurkkua pitkittäin ja asettele ne valkoiselle lautaselle. Nauti välittömästi.",
-    img: "./images/kurkkuja-lautasella.jpeg",
+    img: "./images/kurkkuja-lautasella.jpg",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ let recipes = [
     title: "Suorakurkut lohkoina",
     content:
       "Lohko suolakurkut neljään osaan ja laske ne varovasti mielellään pyöreän muotoiselle lautaselle keoksi. Älä jää ihailemaan kekoa liian pitkäksi aikaa, vaan asettele lohkot yksitellen suuhusi.",
-    img: "./images/1234.jpg",
+    img: "./images/suolakurkkulohkot.jpg",
   },
 ];
 

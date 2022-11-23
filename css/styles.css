@@ -226,11 +226,11 @@ body {
 }
 
 .etusivu-image {
-  background-image: url("../images/etusivutesti1.jpeg");
+  background-image: url("../images/etusivutesti1.jpg");
 }
 
 .pickle-fork {
-  background-image: url("../images/pickle-fork.jpeg");
+  background-image: url("../images/pickle-fork.jpg");
 }
 
 .many-pickles2 {
@@ -245,12 +245,14 @@ body {
   background-image: url("../images/putoavat-kurkut.jpg");
 }
 
+
+
 .pickle-and-plate {
-  background-image: url("../images/uusi-resepti-testi.jpeg");
+  background-image: url("../images/uusi-resepti-testi.jpg");
 }
 
 .testaillaan {
-  background-image: url("../images/putoavat-kurkut.jpg");
+  background-image: url("../images/kurkut-lillumassa.jpg");
 }
 
 .wrapper .caption {
@@ -263,6 +265,12 @@ body {
 .wrapper .left .caption {
   width: 50%;
   text-align: center;
+}
+
+.open-button {
+  font-size: 12px!important;
+  padding: 8px 35px!important;
+  
 }
 
 .mt-100 {
@@ -412,7 +420,7 @@ body {
 .login-icon:visited {
   text-decoration: none;
   color: #2bae66ff;
-  font-size: 30px;
+  font-size: 22px;
   border: solid #2bae66ff 3px;
   border-radius: 25px;
   width: 23%;
@@ -622,7 +630,7 @@ h4 {
 }
 
 .new-recipe-hdr h1 {
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
   margin: 0;
   color: white;
@@ -635,7 +643,7 @@ h4 {
 .new-recipe-hdr {
   background-color: rgba(0, 0, 0, 0.4724439775910369);
   background-color: #2bae66ff;
-  padding: 35px 0;
+  padding: 20px 0;
   text-align: center;
   position: relative;
   z-index: 3;
@@ -694,13 +702,13 @@ h4 {
 
 .new-recipe-btn {
   margin-top: 30px;
-  padding: 15px 10px;
+  padding: 10px 15px;
   z-index: 1;
   text-transform: uppercase;
   width: 200px;
   letter-spacing: 2px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: 1.2px;
 }
 
@@ -724,11 +732,12 @@ h4 {
   background-color: #2bae66ff;
   justify-content: space-evenly;
   align-items: center;
+  
 }
 
 .new-navi-div {
   position: absolute;
-  top: 30px;
+  top: 10px;
   right: 15px;
   display: flex;
   z-index: 5;
@@ -844,8 +853,8 @@ h4 {
 
 .new-recipe-sktk {
   position: absolute;
-  left: 20px;
-  top: -5px;
+  left: 10px;
+  top: -20px;
   font-family: "Shadows Into Light", cursive;
   z-index: 5;
   color: white;
@@ -905,14 +914,14 @@ h4 {
 
 #carousel-slide1 {
   height: 70vh;
-  background-image: url("../images/kokko.jpeg");
+  background-image: url("../images/kurkkukokko.jpg");
   background-position: center center;
   background-size: cover;
 }
 
 #carousel-slide2 {
   height: 70vh;
-  background-image: url("../images/Kurkkuja-lautasella.jpeg");
+  background-image: url("../images/Kurkkuja-lautasella.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -926,7 +935,7 @@ h4 {
 
 #carousel-slide4 {
   height: 70vh;
-  background-image: url("../images/1234.jpg");
+  background-image: url("../images/suolakurkkulohkot.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -1061,7 +1070,8 @@ input[type="file"] {
 }
 
 #send-new-recipe-btn {
-  border: solid 0.2px rgba(255, 255, 255, 0.4);
+  border: solid 0.2px rgba(255, 255, 255, 0.1);
+
 }
 
 .new-recipe-sktk .logo {
