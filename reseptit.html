@@ -46,11 +46,13 @@
           <h1 class="header-text">Suolakurkkutietokanta</h1>
         </div>
         <div class="image pickle-fork"></div>
+        <div class="recipe-info-box" id="recipe-modal"></div>
         <a href="./uusiresepti.html" class="pen-icon-link"
-        ><i class="fa-solid fa-pen-to-square kyna-icon"></i
-      ></a>
+          ><i class="fa-solid fa-pen-to-square kyna-icon"></i
+        ></a>
+
         <div class="caption">
-          <div class="button">           
+          <div class="button">
             <form class="search-formi" action="">
               <input
                 type="search"
@@ -83,36 +85,54 @@
         <div class="image pickle"></div>
         <div class="caption slider">
           <h1 class="reseptit-h1">RESEPTIT</h1>
-        
-          
+
           <div class="container reseptit-carousel">
-            <div id="carouselExampleControls" class="carousel slide karuselli" data-bs-ride="carousel">
-              <div class="carousel-inner" id="carousel-row">
-                
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <div
+              id="carouselExampleControls"
+              class="carousel slide karuselli"
+              data-bs-ride="true"
+              
+            >
+              <div class="carousel-inner" id="carousel-row"></div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            
-          <button class="toggle-button">
-            <i class="fa-solid fa-bars menu-nappi"></i>
-            <!-- <span class="bar"></span>
+
+            <button class="toggle-button">
+              <i class="fa-solid fa-bars menu-nappi"></i>
+              <!-- <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span> -->
-          </button>
-          <a href="#" class="up-icon"><i class="fa-solid fa-circle-up"></i></a>
+            </button>
+            <a href="#" class="up-icon"
+              ><i class="fa-solid fa-circle-up"></i
+            ></a>
+          </div>
         </div>
       </div>
     </div>
-    
-   
-  </div>
 
     <script src="./app.js"></script>
     <script src="./reseptit.js"></script>
@@ -321,3 +341,5 @@
   <span class="visually-hidden">Next</span>
 </button>
 </div> -->
+
+
