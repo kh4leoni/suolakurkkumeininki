@@ -804,7 +804,7 @@ h4 {
 .recipe-card-btn {
   border: solid 2px white;
   padding: 10px 25px;
-  margin-bottom: 40px;
+  
 }
 
 .card-recipe {
@@ -1008,6 +1008,8 @@ input[type="file"] {
   .toggle-button {
     display: none;
   }
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -1015,6 +1017,7 @@ input[type="file"] {
 
   .recipe-card-btn {
     font-size: 10px!important;
+    margin-bottom: 40px;
   }
 
 
@@ -1309,6 +1312,29 @@ input[type="file"] {
   }
 
   @media screen and (max-width: 700px) {
+
+    #carousel-slide1 {
+      height: 55vh;
+  
+    }
+    
+    
+    #carousel-slide2 {
+      height: 55vh;
+
+    }
+    
+    #carousel-slide3 {
+      height: 55vh;
+
+    }
+    
+    #carousel-slide4 {
+      height: 55vh;
+
+    }
+    
+
     .card-recipe {
       height: auto;
       
