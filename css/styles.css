@@ -89,7 +89,7 @@ body {
 .arvostelu-kentta {
   background-color: white;
   position: fixed;
-  top: 300px;
+  top: 170px;
   left: 0px;
   width: 38%;
   margin-bottom: 500px;
@@ -997,6 +997,7 @@ h4 {
   border-radius: 10px;
   opacity: 70%;
   font-size: 10px;
+  
 }
 
 .img-placeholder {
@@ -1052,10 +1053,19 @@ input[type="file"] {
 .img-label {
   color: #2bae66ff;
   position: absolute;
-  right: 51px;
-  top: 140px;
-  font-size: 35px;
+  right: 43px;
+  top: 152px;
+  font-size: 20px;
   cursor: pointer;
+  border: solid 2px #2bae66ff;
+  border-radius: 100px;
+  padding: 5px 12px;
+}
+
+.img-label:hover {
+  background-color: black;
+  transition: 0.4s;
+  color: white;
 }
 
 #image-input {
@@ -1297,7 +1307,11 @@ input[type="file"] {
     margin-left: 10px;
     position: -webkit-sticky;
     position: sticky;
+    font-size: 10px;
+    
   }
+
+  
 
   .menu-nappi {
     font-size: 25px;
@@ -1667,6 +1681,19 @@ input[type="file"] {
       visibility: visible;
     }
   }
+
+  @media screen and (max-height: 720px) {
+    .arvostelu-kentta {
+      height: 40vh;
+      font-size: 10px;
+    }
+
+    #submit-review-btn {
+      margin-top: 3px!important;
+      font-size: 10px;
+    }
+  }
+
 
   @media screen and (max-height: 650px) {
 

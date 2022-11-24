@@ -198,16 +198,7 @@ function profile(id) {
       `;
 
       profileCard.innerHTML = profile_div;
-      //   const openBtn = document.querySelectorAll('.open-button')[0];
-      //     openBtn.addEventListener('click', (e) => {
-      //         console.log(e)
-      //     })
 
-      //   wrapper.addEventListener('click', () => {
-      //     if(profileOpen && !profile()) {
-      //         closeProfile();
-      //     }
-      //   })
     }
   });
 }
