@@ -6,8 +6,7 @@ const clickable = document.querySelector(".clickable");
 
 const search = document.getElementById('search-input-field')
 
-
-
+localStorage.clear();
 
 let recipes = [
   {
