@@ -75,7 +75,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   display: flex;
-  background-color: rgba(43, 174, 102, 0.8775910369);
+  background-color: #2bae66ff;
+  /* background-color: rgba(43, 174, 102, 0.8775910369); */
   /* background: rgb(43,174,102);
   background: linear-gradient(177deg, rgba(43,174,102,1) 0%, rgba(23,222,106,1) 50%, rgba(36, 186, 108, 0.942) 100%); */
   width: 100%;
@@ -964,6 +965,7 @@ h4 {
 
 .recipe-card-btn.active {
   color: white!important;
+  background-color: #2bae66ff!important;
 }
 
 .test-setti {
@@ -1113,7 +1115,7 @@ input[type="file"] {
 
 .modal-a {
   text-decoration: none;
-  color: white;
+  color: white!important;
   border-color: white !important;
 
   padding: 15px 40px;
@@ -1121,13 +1123,13 @@ input[type="file"] {
 
 .modal-a:visited {
   text-decoration: none;
-  color: white;
+  color: white!important;
   border-color: white !important;
 }
 
 .modal-a:active {
   text-decoration: none;
-  color: white;
+  color: white!important;
   border-color: white !important;
 }
 
@@ -1655,6 +1657,7 @@ input[type="file"] {
     .new-recipe-sktk .logo {
       font-size: 18px;
       left: 5px;
+      top:35px;
     }
 
     #add-img-btn {
