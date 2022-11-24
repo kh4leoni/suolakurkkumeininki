@@ -875,11 +875,18 @@ h4 {
 
 .new-recipe-sktk {
   position: absolute;
-  left: 10px;
+  left: 8px;
   top: -20px;
   font-family: "Shadows Into Light", cursive;
   z-index: 5;
   color: white;
+  
+}
+
+.new-recipe-sktk .logo {
+  font-size: 10px!important;
+  padding: 15px 5px;
+  letter-spacing: 3px;
 }
 
 #wrong-password {
@@ -905,9 +912,12 @@ h4 {
   text-decoration: none;
   color: white;
   left: 20px;
-  top: 25px;
+  top: 17px;
   font-family: "Shadows Into Light", cursive;
-  font-size: 0.75em;
+  font-size: 10px;
+  border: solid 2px white;
+  border-radius: 100px;
+  padding: 15px 5px;
 }
 
 .logo:hover {
@@ -1508,6 +1518,10 @@ input[type="file"] {
     opacity: 100;
   }
 
+  .new-recipe-sktk .logo {
+    display: none;
+  }
+
   .new-navi-div a:hover {
     background: none;
     color: rgba(0, 0, 0, 0.3724439775910369);
@@ -1659,11 +1673,7 @@ input[type="file"] {
       right: 10px;
       top: 103px;
     }
-    .new-recipe-sktk .logo {
-      font-size: 18px;
-      left: 5px;
-      top:35px;
-    }
+
 
     #add-img-btn {
       top: 50px;
