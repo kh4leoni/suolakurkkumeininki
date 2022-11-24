@@ -72,7 +72,7 @@ body {
   z-index: 11;
   position: absolute;
   top: 0;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   display: flex;
   background-color: #2bae66ff;
@@ -84,7 +84,12 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  letter-spacing: 1.5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.wrapper .left .index {
+  background-color: rgba(43, 174, 102, 0.8775910369);
 }
 
 .arvostelu-kentta {
@@ -898,7 +903,7 @@ h4 {
 .logo {
   position: absolute;
   text-decoration: none;
-  color: #2bae66ff;
+  color: white;
   left: 20px;
   top: 25px;
   font-family: "Shadows Into Light", cursive;
