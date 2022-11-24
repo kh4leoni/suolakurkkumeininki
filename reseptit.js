@@ -22,7 +22,7 @@ let recipes = [
     title: "Suolakurkkua lautasella",
     content:
       "Puolita kaksi suolakurkkua pitkittäin ja asettele ne valkoiselle lautaselle. Nauti välittömästi.",
-    img: "./images/kurkkuja-lautasella.jpg",
+    img: "./images/Kurkkuja-lautasella.jpg",
   },
   {
     id: 3,
