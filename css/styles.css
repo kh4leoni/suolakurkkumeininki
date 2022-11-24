@@ -173,6 +173,11 @@ body {
 
 .review-btn:hover {
   background-color: rgba(0, 0, 0, 0.9724439775910369) !important;
+  color: #fcf6f5ff!important;
+}
+
+.review-btn.active {
+  color: white!important;
 }
 
 #submit-review-btn {
@@ -957,6 +962,10 @@ h4 {
   font-size: 12px;
 }
 
+.recipe-card-btn.active {
+  color: white!important;
+}
+
 .test-setti {
   height: 10vh;
   z-index: 20;
@@ -1159,6 +1168,10 @@ input[type="file"] {
   visibility: visible;
 }
 
+#search-btn-submit:hover {
+  background-color: black;
+}
+
 @media screen and (max-width: 1600px) {
   .wrapper .haku .caption .button {
     background: none;
@@ -1306,12 +1319,13 @@ input[type="file"] {
     position: fixed;
     left: 20px;
     top: 51vh;
-    color: rgba(0, 0, 0, 0.3724439775910369);
+    color: rgba(0, 0, 0, 0.3724439775910369)!important;
   }
 
   .review-btn.active {
     background: rgba(255, 255, 255, 0.6) !important;
-    color: #2bae66ff;
+    color: #2bae66ff!important;
+
   }
 
   .arvostelu-kentta {
