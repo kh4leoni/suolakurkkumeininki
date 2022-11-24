@@ -27,7 +27,7 @@ let recipes = [
     id: 3,
     title: "Suolakurkkua, leipää ja kanaa",
     content:
-      "Siivuta läjä suolakurkkuja pitkittäin. Ota esiin sopivan iso puutarjotin. Asettele annoksen tähti keskelle puualustaa ja laita toiselle sivulle hyvin kypsytettyä kananlihaa ja toiselle puolelle täysjyväleipää.",
+      "Siivuta läjä suolakurkkuja pitkittäin. Ota esiin sopivan iso puutarjotin. Asettele annoksen tähti keskelle puualustaa ja laita toiselle sivulle hyvin kypsytettyä kananlihaa ja toiselle puolelle täysjyväleipää. Syö suolakurkut.",
     img: "./images/123.jpg",
   },
   {
