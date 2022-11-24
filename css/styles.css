@@ -663,6 +663,12 @@ h4 {
   z-index: 2;
   margin-left: 30px;
 }
+
+.content.new-recipe {
+  margin-left: 0;
+  margin-top: 0px;
+}
+
 .new-recipe-container {
   height: 100vh;
   width: 100%;
@@ -868,7 +874,7 @@ h4 {
 #wrong-password {
   color: red;
   font-weight: 600;
-  background-color: rgba(0, 0, 0, 0.5724439775910369);
+  font-size: 12px;
   padding: 4px 15px;
   position: absolute;
   top: 192px;
@@ -1424,7 +1430,7 @@ input[type="file"] {
   .nav-link-div.active {
     display: flex;
     position: fixed;
-    top: 29.5px;
+    top: 29px;
     left: 0;
     right: 0;
     height: 46.6vh;
@@ -1538,6 +1544,10 @@ input[type="file"] {
 
   @media screen and (max-width: 700px) {
 
+    #wrong-password {
+      top: 165px;
+    }
+
     .caption.esittely {
       width: 90%;
     }
@@ -1630,7 +1640,7 @@ input[type="file"] {
     }
     .new-recipe-sktk .logo {
       font-size: 18px;
-      left: -5px;
+      left: 5px;
     }
 
     #add-img-btn {
