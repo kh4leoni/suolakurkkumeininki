@@ -4,6 +4,11 @@ const carousel = document.querySelector(".carousel");
 const left = document.querySelector(".left");
 const clickable = document.querySelector(".clickable");
 
+const search = document.getElementById('search-input-field')
+
+
+
+
 let recipes = [
   {
     id: 1,
@@ -34,6 +39,17 @@ let recipes = [
     img: "./images/suolakurkkulohkot.jpg",
   },
 ];
+
+
+
+search.addEventListener('keyup', (e) => {
+ recipes.forEach(recipe => {
+  if (recipe.title.includes(e.target.value)) {
+    console.log(recipe.title)
+  }
+ })
+})
+
 
 renderRecipes();
 

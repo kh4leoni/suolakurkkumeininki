@@ -179,11 +179,11 @@ body {
 
 .review-btn:hover {
   background-color: rgba(0, 0, 0, 0.9724439775910369) !important;
-  color: #fcf6f5ff!important;
+  color: #fcf6f5ff !important;
 }
 
 .review-btn.active {
-  color: white!important;
+  color: white !important;
 }
 
 #submit-review-btn {
@@ -256,8 +256,6 @@ body {
   background-image: url("../images/putoavat-kurkut.jpg");
 }
 
-
-
 .pickle-and-plate {
   background-image: url("../images/uusi-resepti-testi.jpg");
 }
@@ -279,9 +277,8 @@ body {
 }
 
 .open-button {
-  font-size: 12px!important;
-  padding: 8px 35px!important;
-  
+  font-size: 12px !important;
+  padding: 8px 35px !important;
 }
 
 .mt-100 {
@@ -754,7 +751,6 @@ h4 {
   background-color: #2bae66ff;
   justify-content: space-evenly;
   align-items: center;
-  
 }
 
 .new-navi-div {
@@ -842,7 +838,7 @@ h4 {
 }
 
 .hidden-sktk {
-  display:none;
+  display: none;
 }
 
 .modal-content {
@@ -850,7 +846,6 @@ h4 {
   padding: 40px 20px;
   font-size: 20px;
   border-left: solid 2px #2bae66ff;
- 
 }
 
 .modal-title {
@@ -880,11 +875,10 @@ h4 {
   font-family: "Shadows Into Light", cursive;
   z-index: 5;
   color: white;
-  
 }
 
 .new-recipe-sktk .logo {
-  font-size: 10px!important;
+  font-size: 10px !important;
   padding: 15px 5px;
   letter-spacing: 3px;
 }
@@ -979,8 +973,8 @@ h4 {
 }
 
 .recipe-card-btn.active {
-  color: white!important;
-  background-color: #2bae66ff!important;
+  color: white !important;
+  background-color: #2bae66ff !important;
 }
 
 .test-setti {
@@ -1034,7 +1028,6 @@ h4 {
   border-radius: 10px;
   opacity: 70%;
   font-size: 10px;
-  
 }
 
 .img-placeholder {
@@ -1118,7 +1111,6 @@ input[type="file"] {
 
 #send-new-recipe-btn {
   border: solid 0.2px rgba(255, 255, 255, 0.1);
-
 }
 
 .new-recipe-sktk .logo {
@@ -1130,7 +1122,7 @@ input[type="file"] {
 
 .modal-a {
   text-decoration: none;
-  color: white!important;
+  color: white !important;
   border-color: white !important;
 
   padding: 15px 40px;
@@ -1138,13 +1130,13 @@ input[type="file"] {
 
 .modal-a:visited {
   text-decoration: none;
-  color: white!important;
+  color: white !important;
   border-color: white !important;
 }
 
 .modal-a:active {
   text-decoration: none;
-  color: white!important;
+  color: white !important;
   border-color: white !important;
 }
 
@@ -1209,14 +1201,12 @@ input[type="file"] {
 }
 
 @media screen and (max-width: 1340px) {
-
   .big-secret {
-    display:none
+    display: none;
   }
 
   .hidden-sktk {
-    display:inline-block;
-
+    display: inline-block;
   }
 
   .header-text {
@@ -1243,11 +1233,6 @@ input[type="file"] {
 }
 
 @media screen and (max-width: 1200px) {
-
-
-
-
-
   .recipe-info-box {
     height: 90%;
     flex-direction: column;
@@ -1336,13 +1321,12 @@ input[type="file"] {
     position: fixed;
     left: 20px;
     top: 51vh;
-    color: rgba(0, 0, 0, 0.3724439775910369)!important;
+    color: rgba(0, 0, 0, 0.3724439775910369) !important;
   }
 
   .review-btn.active {
     background: rgba(255, 255, 255, 0.6) !important;
-    color: #2bae66ff!important;
-
+    color: #2bae66ff !important;
   }
 
   .arvostelu-kentta {
@@ -1352,10 +1336,7 @@ input[type="file"] {
     position: -webkit-sticky;
     position: sticky;
     font-size: 10px;
-    
   }
-
-  
 
   .menu-nappi {
     font-size: 25px;
@@ -1578,7 +1559,6 @@ input[type="file"] {
   }
 
   @media screen and (max-width: 700px) {
-
     #wrong-password {
       top: 165px;
     }
@@ -1593,7 +1573,7 @@ input[type="file"] {
     }
 
     #kirjaudu-sisaan {
-      font-size: 12px!important;
+      font-size: 12px !important;
     }
 
     .login-icon {
@@ -1602,7 +1582,7 @@ input[type="file"] {
 
     #login-button {
       font-size: 10px;
-      margin-top: 25px!important;
+      margin-top: 25px !important;
     }
 
     .login-icon-div {
@@ -1614,11 +1594,9 @@ input[type="file"] {
     }
 
     #submit-review-btn {
-      margin-top: 3px!important;
+      margin-top: 3px !important;
       font-size: 10px;
     }
-
-  
 
     #carousel-slide1 {
       height: 60vh;
@@ -1673,7 +1651,6 @@ input[type="file"] {
       right: 10px;
       top: 103px;
     }
-
 
     #add-img-btn {
       top: 50px;
@@ -1776,21 +1753,19 @@ input[type="file"] {
     }
 
     #submit-review-btn {
-      margin-top: 3px!important;
+      margin-top: 3px !important;
       font-size: 10px;
     }
   }
 
-
   @media screen and (max-height: 650px) {
-
     #kirjaudu-sisaan {
-      font-size: 16px!important;
+      font-size: 16px !important;
     }
 
     .button.login {
       position: absolute;
-      left: 25px;
+      left: 150px;
       height: 50vh;
       position: absolute;
       top: 100px;
@@ -1805,7 +1780,7 @@ input[type="file"] {
 
     .login-input-text {
       height: 7%;
-      margin-top: 10px!important;
+      margin-top: 10px !important;
       margin-bottom: 4px;
       padding: 0;
     }
@@ -1819,16 +1794,14 @@ input[type="file"] {
     }
 
     #login-button {
-      margin-top: 6px!important;
+      margin-top: 6px !important;
       padding: 5px 15px;
       font-size: 10px;
     }
 
     #input-password {
-      margin-top: 0!important;
+      margin-top: 0 !important;
     }
-
-  
 
     .jumbotron.fluid {
       width: 51%;
@@ -1897,6 +1870,6 @@ input[type="file"] {
     position: absolute;
     width: 80%;
     margin: auto;
-    top:80px;
+    top: 80px;
   }
 }
