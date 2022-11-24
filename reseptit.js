@@ -4,9 +4,9 @@ const carousel = document.querySelector(".carousel");
 const left = document.querySelector(".left");
 const clickable = document.querySelector(".clickable");
 
-const search = document.getElementById('search-input-field')
+// const search = document.getElementById('search-input-field')
 
-localStorage.clear();
+
 
 let recipes = [
   {
@@ -41,13 +41,13 @@ let recipes = [
 
 
 
-search.addEventListener('keyup', (e) => {
- recipes.forEach(recipe => {
-  if (recipe.title.includes(e.target.value)) {
-    console.log(recipe.title)
-  }
- })
-})
+// search.addEventListener('keyup', (e) => {
+//  recipes.forEach(recipe => {
+//   if (recipe.title.includes(e.target.value)) {
+//     console.log(recipe.title)
+//   }
+//  })
+// })
 
 
 renderRecipes();
