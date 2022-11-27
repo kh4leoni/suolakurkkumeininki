@@ -1,7 +1,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
-  font-size: 0.87em;
+  font-size: 0.87rem;
 }
 
 .wrapper .left,
@@ -22,7 +22,7 @@ body {
 
 .reseptit-carousel {
   position: absolute;
-  top: 80px;
+  top: 5rem;
   width: 100%;
   height: 100vh !important;
   padding: 0;
@@ -44,7 +44,7 @@ body {
 .wrapper .right.arvostelut {
   overflow: visible;
   height: auto;
-  padding-top: calc(25vh - 100px);
+  padding-top: calc(25vh - 6.25rem);
 }
 
 .wrapper .left.arvostelut {
@@ -58,7 +58,7 @@ body {
   z-index: 12;
   background-color: rgba(43, 172, 103, 0.8);
   width: 100%;
-  height: 80px;
+  height: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,7 +72,7 @@ body {
   z-index: 11;
   position: absolute;
   top: 0;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   display: flex;
   background-color: #2bae66ff;
@@ -80,17 +80,17 @@ body {
   /* background: rgb(43,174,102);
   background: linear-gradient(177deg, rgba(43,174,102,1) 0%, rgba(23,222,106,1) 50%, rgba(36, 186, 108, 0.942) 100%); */
   width: 100%;
-  height: 80px;
+  height: 5rem;
   justify-content: center;
   align-items: center;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 0.1875rem;
   text-transform: uppercase;
 }
 
 #arvostelut-pen {
   pointer-events: none;
-  margin-top: 13px;
+  margin-top: 0.8125rem;
 }
 
 .wrapper .left .index {
@@ -100,27 +100,27 @@ body {
 .arvostelu-kentta {
   background-color: white;
   position: fixed;
-  top: 170px;
-  left: 0px;
+  top: 10.625rem;
+  left: 0;
   width: 38%;
-  margin-bottom: 500px;
+  margin-bottom: 31.25rem;
   color: black;
-  padding: 15px;
+  padding: 0.9375rem;
   text-decoration: none;
   font-weight: 400;
   font-size: 1em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.05rem;
   transition: 0.25s ease all;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   overflow: hidden;
-  border-radius: 0px;
+  border-radius: 0;
   word-wrap: break-word;
   hyphens: auto;
   flex-direction: column;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   display: none;
-  margin-left: 100px;
-  border: solid 0.1px rgba(0, 0, 0, 0.11724439775910369);
+  margin-left: 6.25rem;
+  border: solid 0.0063rem rgba(0, 0, 0, 0.11724439775910369);
   text-transform: uppercase;
   z-index: 5;
   animation: fadeInAnimation ease 0.5s;
@@ -163,23 +163,23 @@ body {
 
 .review-btn-div {
   color: black;
-  border-radius: 1000px;
+  border-radius: 62.5rem;
   position: fixed;
-  top: 100px;
-  left: 20px;
+  top: 6.25rem;
+  left: 1.25rem;
   z-index: 11;
   display: inline-block;
-  border: solid 2px white;
+  border: solid 0.125rem white;
 }
 
 .review-btn {
-  height: 50px;
-  width: 50px;
+  height: 3.125rem;
+  width: 3.125rem;
   color: white;
-  border-radius: 1000px !important;
+  border-radius: 62.5rem !important;
   background-color: rgba(43, 174, 103, 0.8724439775910369) !important;
   padding: 0 !important;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .review-btn:hover {
@@ -201,15 +201,15 @@ body {
 
 .wrapper .right .navb .navi-link {
   text-decoration: none;
-  margin: 0 1.25em;
-  padding: 1em 1em;
+  margin: 0 1.25rem;
+  padding: 1rem 1rem;
   font-weight: 600;
   font-size: 1.2em;
   color: white;
   text-transform: uppercase;
-  border-radius: 1.2em;
+  border-radius: 1.2rem;
   color: white;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.0813rem;
 }
 
 .wrapper .right {
@@ -282,52 +282,52 @@ body {
 }
 
 .open-button {
-  font-size: 12px !important;
-  padding: 8px 35px !important;
+  font-size: 0.75rem !important;
+  padding: 0.5rem 2.1875rem !important;
 }
 
 .mt-100 {
-  margin-top: 6.25em;
+  margin-top: 6.25rem;
 }
 
 .mt-16 {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 .wrapper .caption h1 {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 40px;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
 }
 
 .wrapper .right .caption {
-  padding: 0 15px;
+  padding: 0 0.9375rem;
 }
 
 .jumbo-h1 {
-  font-size: 30px !important;
+  font-size: 1.875rem !important;
   width: 90%;
-  margin: 15px auto 0 auto;
+  margin: 0.9375rem auto 0 auto;
 }
 
 .jumbo-p {
-  font-size: 24px !important;
+  font-size: 1.5rem !important;
   width: 90%;
-  margin: 20px auto;
+  margin: 1.25rem auto;
 }
 
 .wrapper .left .caption h1 {
   text-transform: uppercase;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.15rem;
 }
 
 .padding-etusivu {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 #panel {
   transition: 0.5s;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .arvostelut .progress-bar {
@@ -335,15 +335,15 @@ body {
 }
 
 #profile {
-  height: 400px;
+  height: 25rem;
   background-color: white;
-  box-shadow: 10px 10px 20px -10px rgba(158, 158, 158, 0.644);
-  border-radius: 30px;
+  box-shadow: 0.625rem 0.625rem 1.25rem -0.625rem rgba(158, 158, 158, 0.644);
+  border-radius: 1.875rem;
   transform: scale(0);
   transition: 0.5s;
   position: fixed;
-  top: 310px;
-  left: 100px;
+  top: 19.375rem;
+  left: 6.25rem;
   width: 40%;
   opacity: 0;
   color: black;
@@ -351,18 +351,18 @@ body {
 }
 
 .close {
-  font-size: 20px;
+  font-size: 1.25rem;
   cursor: pointer;
 }
 
 .arvostelut .card {
   transition: 0.5s;
-  transform: translate(0px, 0px);
+  transform: translate(0rem, 0rem);
 }
 
 .arvostelut .card:hover {
-  box-shadow: 10px 10px 40px -20px rgba(98, 98, 98);
-  transform: translate(-5px, -5px);
+  box-shadow: 0.625rem 0.625rem 2.5rem -1.25rem rgba(98, 98, 98);
+  transform: translate(-0.3125rem, -0.3125rem);
 }
 
 .search-formi {
@@ -382,16 +382,16 @@ body {
 .form-control {
   width: 70%;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .form-control:focus {
   border-color: #2bae66ff;
-  box-shadow: inset 0 1px 1px #fcf6f5ff, 0 0 8px #2bae66ff;
+  box-shadow: inset 0 0.0625rem 0.0625rem #fcf6f5ff, 0 0 0.5rem #2bae66ff;
 }
 
 .btn:focus {
-  box-shadow: inset 0 1px 1px #fcf6f5ff, 0 0 8px #2bae66ff !important;
+  box-shadow: inset 0 0.0625rem 0.0625rem #fcf6f5ff, 0 0 0.5rem #2bae66ff !important;
 }
 
 .btn:disabled {
@@ -414,8 +414,8 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 400px;
-  border: solid 1px white;
+  height: 25rem;
+  border: solid 0.0625rem white;
 }
 
 .jumbotron-fluid {
@@ -423,24 +423,24 @@ body {
 }
 
 #kirjaudu-sisaan {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .login h3 {
   color: white;
-  margin-top: 10px;
+  margin-top: 0.625rem;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .login-icon,
 .login-icon:visited {
   text-decoration: none;
   color: #2bae66ff;
-  font-size: 22px;
-  border: solid #2bae66ff 3px;
-  border-radius: 25px;
+  font-size: 1.375rem;
+  border: solid #2bae66ff 0.1875rem;
+  border-radius: 1.5625rem;
   width: 23%;
   background-color: #fcf6f5ff;
 }
@@ -464,24 +464,24 @@ body {
 #login-button {
   text-transform: uppercase;
   color: #fcf6f5ff;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.0938rem;
   font-weight: 600;
-  padding: 10px 25px;
+  padding: 0.625rem 1.5625rem;
 }
 
 .wrapper .caption .button {
   background-color: rgba(0, 0, 0, 0.7);
   /* background-color: rgba(255, 255, 255, 0.8); */
   color: #fcf6f5ff;
-  padding: 15px;
+  padding: 0.9375rem;
   text-decoration: none;
   font-weight: 400;
-  font-size: 1em;
-  letter-spacing: 0.05em;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
   transition: 0.25s ease all;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   /* overflow: hidden; */
-  border-radius: 10px;
+  border-radius: 0.625rem;
   word-wrap: break-word;
   hyphens: auto;
 }
@@ -494,8 +494,8 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   transition: 0.3s ease all;
-  padding: 1em 2em;
-  border-radius: 1.56em;
+  padding: 1rem 2rem;
+  border-radius: 1.56rem;
 }
 
 .card {
@@ -562,23 +562,23 @@ h4 {
 .btn {
   background-color: #2bae66ff;
   border: none;
-  border-radius: 25px;
+  border-radius: 1.5625rem;
   text-transform: uppercase;
   font-weight: 600;
-  padding: 5px 25px;
+  padding: 0.3125rem 1.5625rem;
 }
 
 .kyna-icon {
   position: fixed;
   color: #fcf6f5ff;
-  left: 20px;
-  top: 100px;
-  font-size: 20px;
+  left: 1.25rem;
+  top: 6.25rem;
+  font-size: 1.25rem;
   background-color: rgba(43, 174, 103, 0.9);
-  padding: 15px;
-  border-radius: 100px;
+  padding: 0.9375rem;
+  border-radius: 6.25rem;
   font-weight: 300;
-  border: solid 2px white;
+  border: solid 0.125rem white;
   z-index: 11;
 }
 
@@ -597,7 +597,7 @@ h4 {
 }
 
 .col-md-6 {
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }
 
 /* .card:hover {
@@ -619,7 +619,7 @@ h4 {
 }
 
 .new-recipe-nick {
-  margin-left: 20px;
+  margin-left: 1.25rem;
   width: 21%;
   text-align: center;
   z-index: 1;
@@ -629,57 +629,57 @@ h4 {
 .recipe-title {
   display: block;
   width: 40%;
-  padding-left: 20px;
-  margin-top: 40px;
+  padding-left: 1.25rem;
+  margin-top: 2.5rem;
   text-align: left;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.96);
 }
 
 #exampleFormControlTextarea1 {
-  height: 300px;
+  height: 18.75rem;
   width: 40%;
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   z-index: 2;
   color: black;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   resize: none;
   background-color: rgba(255, 255, 255, 0.96);
 }
 
 .new-recipe-hdr h1 {
-  font-size: 30px;
+  font-size: 1.875rem;
   text-align: center;
   margin: 0;
   color: white;
   text-transform: uppercase;
   display: inline-block;
   z-index: 3;
-  letter-spacing: 1.6px;
+  letter-spacing: 0.1rem;
 }
 
 .new-recipe-hdr {
   background-color: rgba(0, 0, 0, 0.4724439775910369);
   background-color: #2bae66ff;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   text-align: center;
   position: relative;
   z-index: 3;
 }
 
 .content {
-  margin-top: 30px;
+  margin-top: 1.875rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
-  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 .content.new-recipe {
   margin-left: 0;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .new-recipe-container {
@@ -725,15 +725,15 @@ h4 {
 }
 
 .new-recipe-btn {
-  margin-top: 30px;
-  padding: 10px 15px;
+  margin-top: 1.875rem;
+  padding: 0.625rem 0.9375rem;
   z-index: 1;
   text-transform: uppercase;
-  width: 200px;
-  letter-spacing: 2px;
+  width: 12.5rem;
+  letter-spacing: 0.125rem;
   font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 1.2px;
+  font-size: 1rem;
+  letter-spacing: 0.075rem;
 }
 
 .clickable {
@@ -760,42 +760,42 @@ h4 {
 
 .new-navi-div {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 0.625rem;
+  right: 0.9375rem;
   display: flex;
   z-index: 5;
 }
 
 .new-navi-div a {
   text-decoration: none;
-  /* margin-left: 20px; */
-  padding: 1em 1.5em;
+  /* margin-left: 1.25rem; */
+  padding: 1rem 1.5rem;
   text-transform: uppercase;
   color: white;
   font-weight: 600;
-  letter-spacing: 1.7px;
+  letter-spacing: 0.1062rem;
   z-index: 3;
   border-radius: 2.5em;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .info-img-wrapper {
   width: 100%;
   height: 16vh;
   background-color: white;
-  border: solid white 1px;
-  border-radius: 14px;
+  border: solid white 0.0625rem;
+  border-radius: 0.875rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .info-img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
 }
 
 .recipe-card-btn:hover {
@@ -810,14 +810,14 @@ h4 {
 .recipe-info-box {
   position: absolute;
 
-  box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.625rem 0.625rem 0.9375rem 0.3125rem rgba(0, 0, 0, 0.4);
   border-radius: 0;
   z-index: 15;
   width: 90%;
   height: 40%;
-  border-radius: 15px;
+  border-radius: 0.9375rem;
   color: #2bae66ff;
-  border: solid 2px #2bae66ff;
+  border: solid 0.125rem #2bae66ff;
   background: white;
   /* background: linear-gradient(
     117deg,
@@ -833,10 +833,10 @@ h4 {
 .modal-header {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 1.25rem;
   justify-content: center;
-  border: solid 2px #2bae66ff;
-  border-right: 1px;
+  border: solid 0.125rem #2bae66ff;
+  border-right: 0.0625rem;
   border-top: none;
   border-left: none;
   border-bottom: none;
@@ -848,15 +848,15 @@ h4 {
 
 .modal-content {
   width: 80%;
-  padding: 40px 20px;
-  font-size: 20px;
-  border-left: solid 2px #2bae66ff;
+  padding: 2.5rem 1.25rem;
+  font-size: 1.25rem;
+  border-left: solid 0.125rem #2bae66ff;
 }
 
 .modal-title {
   align-self: flex-end;
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
   font-weight: 600;
   text-align: center;
 }
@@ -869,33 +869,33 @@ h4 {
   background-color: rgba(0, 0, 0, 0.8);
   color: white;
   transition: 0.3s ease all;
-  padding: 1em 2.5em;
-  border-radius: 2.56em;
+  padding: 1rem 2.5rem;
+  border-radius: 2.56rem;
 }
 
 .new-recipe-sktk {
   position: absolute;
-  left: 8px;
-  top: -20px;
+  left: 0.5rem;
+  top: -1.25rem;
   font-family: "Shadows Into Light", cursive;
   z-index: 5;
   color: white;
 }
 
 .new-recipe-sktk .logo {
-  font-size: 10px !important;
-  padding: 15px 5px;
-  letter-spacing: 3px;
+  font-size: 0.625rem !important;
+  padding: 0.9375rem 0.3125rem;
+  letter-spacing: 0.1875rem;
 }
 
 #wrong-password {
   color: red;
   font-weight: 600;
-  font-size: 12px;
-  padding: 4px 15px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0.9375rem;
   position: absolute;
-  top: 192px;
-  border-radius: 10px;
+  top: 12rem;
+  border-radius: 0.625rem;
   display: none;
 }
 
@@ -903,20 +903,20 @@ h4 {
   display: flex;
 }
 .padding-span {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 
 .logo {
   position: absolute;
   text-decoration: none;
   color: white;
-  left: 20px;
-  top: 17px;
+  left: 1.25rem;
+  top: 1.0625rem;
   font-family: "Shadows Into Light", cursive;
-  font-size: 10px;
-  border: solid 2px white;
-  border-radius: 100px;
-  padding: 15px 5px;
+  font-size: 0.625rem;
+  border: solid 0.125rem white;
+  border-radius: 6.25rem;
+  padding: 0.9375rem 0.3125rem;
 }
 
 .logo:hover {
@@ -924,7 +924,7 @@ h4 {
 }
 
 .img-wrapper {
-  height: 300px;
+  height: 18.75rem;
 }
 
 /* .img-wrapper-reseptit {
@@ -972,9 +972,9 @@ h4 {
 }
 
 .recipe-card-btn {
-  border: solid 1px white;
-  padding: 10px 20px;
-  font-size: 12px;
+  border: solid 0.0625rem white;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.75rem;
 }
 
 .recipe-card-btn.active {
@@ -993,22 +993,22 @@ h4 {
 .card-recipe {
   background-color: rgba(43, 174, 103, 1) !important;
   color: #fcf6f5ff;
-  font-size: 16px;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 23.2vh;
-  padding-bottom: 40px !important;
+  padding-bottom: 2.5rem !important;
 
-  border-top: solid white 1px;
+  border-top: solid white 0.0625rem;
   overflow: hidden;
 }
 
 .card-recipe h5 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  letter-spacing: 1.3px;
+  letter-spacing: 0.0813rem;
 }
 
 .wrapper .right.etusivu .flexnav {
@@ -1017,7 +1017,7 @@ h4 {
 
 .arvostelu-img {
   object-fit: contain;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .logo:visited {
@@ -1028,21 +1028,21 @@ h4 {
 #add-img-btn {
   position: absolute;
   color: white;
-  top: 152px;
-  right: 52px;
-  border-radius: 10px;
+  top: 9.5rem;
+  right: 3.25rem;
+  border-radius: 0.625rem;
   opacity: 70%;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .img-placeholder {
-  border: solid 1px #2bae66ff;
-  height: 100px;
-  width: 100px;
+  border: solid 0.0625rem #2bae66ff;
+  height: 6.25rem;
+  width: 6.25rem;
   position: absolute;
-  top: 45px;
-  right: 20px;
-  border-radius: 5px;
+  top: 2.8125rem;
+  right: 1.25rem;
+  border-radius: 0.3125rem;
   background-color: white;
   opacity: 80%;
   z-index: 10;
@@ -1061,22 +1061,22 @@ input[type="file"] {
 
 .thank-you-message {
   background-color: rgba(0, 0, 0, 0.45735644257703087);
-  margin-top: 150px;
+  margin-top: 9.375rem;
   text-align: center;
   z-index: 15;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
 .thank-you-message .btn {
-  padding: 15px 20px;
-  font-size: 18px;
+  padding: 0.9375rem 1.25rem;
+  font-size: 1.125rem;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 1.3px;
-  margin-top: 15px;
+  letter-spacing: 0.0813rem;
+  margin-top: 0.9375rem;
 }
 
 .thank-you-message .btn a,
@@ -1088,13 +1088,13 @@ input[type="file"] {
 .img-label {
   color: #2bae66ff;
   position: absolute;
-  right: 43px;
-  top: 152px;
-  font-size: 20px;
+  right: 2.6875rem;
+  top: 9.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
-  border: solid 2px #2bae66ff;
-  border-radius: 100px;
-  padding: 5px 12px;
+  border: solid 0.125rem #2bae66ff;
+  border-radius: 6.25rem;
+  padding: 0.3125rem 0.75rem;
 }
 
 .img-label:hover {
@@ -1105,24 +1105,24 @@ input[type="file"] {
 
 #image-input {
   position: absolute;
-  right: 80px;
-  top: 150px;
-  height: 40px;
+  right: 5rem;
+  top: 9.375rem;
+  height: 2.5rem;
   background-color: #2bae66ff;
-  width: 100px;
+  width: 6.25rem;
 
   cursor: pointer;
 }
 
 #send-new-recipe-btn {
-  border: solid 0.2px rgba(255, 255, 255, 0.1);
+  border: solid 0.0125rem rgba(255, 255, 255, 0.1);
 }
 
 .new-recipe-sktk .logo {
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
-  left: 10px;
+  left: 0.625rem;
 }
 
 .modal-a {
@@ -1130,7 +1130,7 @@ input[type="file"] {
   color: white !important;
   border-color: white !important;
 
-  padding: 15px 40px;
+  padding: 0.9375rem 2.5rem;
 }
 
 .modal-a:visited {
@@ -1151,13 +1151,13 @@ input[type="file"] {
 
 .new-recipe-sktk .logo:visited {
   color: white;
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 
 .reseptit .carousel-control-prev {
   position: absolute;
-  height: 400px;
-  top: 100px;
+  height: 25rem;
+  top: 6.25rem;
 }
 
 .carousel-control-prev-icon {
@@ -1166,14 +1166,14 @@ input[type="file"] {
 
 .reseptit .carousel-control-next {
   position: absolute;
-  height: 400px;
-  top: 100px;
+  height: 25rem;
+  top: 6.25rem;
 }
 
 .search-button {
   visibility: hidden;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
 }
 
 #search-btn-submit {
@@ -1197,10 +1197,10 @@ input[type="file"] {
   }
 
   #add-img-btn {
-    top: 75px;
-    font-size: 24px;
-    width: 50px;
-    right: 5px;
+    top: 4.6875rem;
+    font-size: 1.5rem;
+    width: 3.125rem;
+    right: 0.3125rem;
   }
 }
 
@@ -1251,22 +1251,22 @@ input[type="file"] {
   }
 
   .modal-title {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
   }
 
   .modal-content {
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin-top: 0;
-    padding-top: 5px !important;
+    padding-top: 0.3125rem !important;
     padding-bottom: 0 !important;
     text-align: center;
     align-self: center;
   }
 
   .recipe-card-btn {
-    font-size: 10px !important;
-    margin-bottom: 40px;
+    font-size: 0.625rem !important;
+    margin-bottom: 2.5rem;
   }
 
   .reseptit-h1 {
@@ -1281,11 +1281,11 @@ input[type="file"] {
   }
 
   .card-title {
-    font-size: 20px !important;
+    font-size: 1.25rem !important;
   }
 
   .card-text {
-    font-size: 13px !important;
+    font-size: 0.8125rem !important;
   }
 
   .wrapper .right.reseptit {
@@ -1293,7 +1293,7 @@ input[type="file"] {
   }
 
   .esittely {
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 
   .wrapper .left .caption {
@@ -1312,18 +1312,18 @@ input[type="file"] {
   }
 
   #exampleFormControlTextarea1 {
-    height: 300px;
+    height: 18.75rem;
     width: 80%;
   }
 
   .recipe-title {
     width: 80%;
-    margin-top: 120px;
+    margin-top: 7.5rem;
   }
 
   .review-btn-div.active {
     position: fixed;
-    left: 20px;
+    left: 1.25rem;
     top: 51vh;
     color: rgba(0, 0, 0, 0.3724439775910369) !important;
   }
@@ -1336,17 +1336,17 @@ input[type="file"] {
   .arvostelu-kentta {
     margin-bottom: 0;
     width: 96%;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     position: -webkit-sticky;
     position: sticky;
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .menu-nappi {
-    font-size: 25px;
+    font-size: 1.5625rem;
     position: absolute;
-    right: 10px;
-    top: 2px;
+    right: 0.625rem;
+    top: 0.125rem;
   }
 
   .jar {
@@ -1354,7 +1354,7 @@ input[type="file"] {
   }
 
   .wrapper .right .navb {
-    top: -1000px;
+    top: -62.5rem;
   }
 
   .wrapper .left .header {
@@ -1373,25 +1373,25 @@ input[type="file"] {
     display: flex;
     justify-content: flex-end;
     top: 0;
-    right: 0px;
-    width: 41px;
-    height: 30px;
+    right: 0rem;
+    width: 2.5625rem;
+    height: 1.875rem;
     color: rgba(255, 255, 255, 0.6);
     background-color: rgba(43, 174, 104, 0.9);
     position: fixed;
     border: none !important;
     padding: 0;
-    padding-right: 14px;
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
+    padding-right: 0.875rem;
+    border-radius: 0.625rem;
+    margin-top: 0.625rem;
+    margin-right: 0.625rem;
     z-index: 20;
   }
   .search-button {
-    margin-bottom: 60px;
+    margin-bottom: 3.75rem;
   }
   .hakukomponentti {
-    margin-top: 60px;
+    margin-top: 3.75rem;
   }
 
   .nav-link-div {
@@ -1400,7 +1400,7 @@ input[type="file"] {
     justify-content: center;
   }
   .wrapper .right.arvostelut {
-    padding: calc(25vh - 200px);
+    padding: calc(25vh - 12.5rem);
   }
 
   .wrapper .left.arvostelut {
@@ -1412,7 +1412,7 @@ input[type="file"] {
   }
 
   .small-profile {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
 
   .etusivu .toggle-button {
@@ -1431,13 +1431,13 @@ input[type="file"] {
 
   .flexnav {
     position: absolute;
-    right: 5px;
-    top: -50px;
+    right: 0.3125rem;
+    top: -3.125rem;
     display: flex;
     flex-direction: column;
     /* background-color: rgba(0, 0, 0, 0.7); */
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: 1.25rem;
+    margin-top: 1.25rem;
   }
 
   .flexnav a {
@@ -1446,7 +1446,7 @@ input[type="file"] {
   .nav-link-div.active {
     display: flex;
     position: fixed;
-    top: 29px;
+    top: 1.8125rem;
     left: 0;
     right: 0;
     height: 46.6vh;
@@ -1456,7 +1456,7 @@ input[type="file"] {
     animation: fadeInAnimation ease 0.3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .toggle-button.active {
@@ -1481,14 +1481,14 @@ input[type="file"] {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5724439775910369);
-    padding: 10px;
+    padding: 0.625rem;
     position: absolute;
-    margin-top: 20px;
-    right: 4px;
+    margin-top: 1.25rem;
+    right: 0.25rem;
   }
 
   .new-navi-div a {
-    margin: 6px 0;
+    margin: 0.375rem 0;
     text-align: center;
   }
 
@@ -1498,7 +1498,7 @@ input[type="file"] {
     position: fixed;
     background-color: rgba(43, 174, 104, 0.9);
     width: 100%;
-    top: 10px;
+    top: 0.625rem;
     right: 0;
     opacity: 100;
   }
@@ -1515,17 +1515,17 @@ input[type="file"] {
     border-radius: 0;
   }
   .kyna-icon {
-    left: 15px;
-    top: 35px;
+    left: 0.9375rem;
+    top: 2.1875rem;
   }
   .wrapper .haku .caption .button {
     background: none;
   }
 
   #profile {
-    left: 35px;
-    top: 200px;
-    height: 470px;
+    left: 2.1875rem;
+    top: 12.5rem;
+    height: 29.375rem;
     width: 90%;
   }
 
@@ -1534,12 +1534,12 @@ input[type="file"] {
   }
 
   #kuvakorttiboksi {
-    width: 250px;
-    height: 100px;
+    width: 15.625rem;
+    height: 6.25rem;
     border: none;
     position: absolute;
-    left: 20px;
-    padding: 0px !important;
+    left: 1.25rem;
+    padding: 0rem !important;
     z-index: 5 !important;
   }
 
@@ -1547,24 +1547,24 @@ input[type="file"] {
     border-right: 0 !important;
   }
   .small-screen-margin {
-    margin-left: 15px;
+    margin-left: 0.9375rem;
   }
 
   .arvostelut .caption h1 {
-    margin-bottom: 7px;
+    margin-bottom: 0.4375rem;
   }
 
   .wrapper .right .navb .navi-link:hover {
     background: none;
     color: rgba(255, 255, 255, 0.6);
     transition: none;
-    padding: 1em 1em;
+    padding: 1rem 1rem;
     border-radius: 0;
   }
 
   @media screen and (max-width: 700px) {
     #wrong-password {
-      top: 165px;
+      top: 10.3125rem;
     }
 
     .caption.esittely {
@@ -1572,34 +1572,36 @@ input[type="file"] {
     }
 
     .button.login {
-      border: solid 1px white;
-      height: 40vh;
+      border: solid 0.0625rem white;
+      height: 50vh;
+      margin: auto;
+     
     }
 
     #kirjaudu-sisaan {
-      font-size: 12px !important;
+      font-size: 0.75rem !important;
     }
 
     .login-icon {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
 
     #login-button {
-      font-size: 10px;
-      margin-top: 25px !important;
+      font-size: 0.625rem;
+      margin-top: 1.5625rem !important;
     }
 
     .login-icon-div {
-      height: 50px;
+      height: 3.125rem;
     }
 
     #login-paragraph {
-      font-size: 12px;
+      font-size: 0.75rem;
     }
 
     #submit-review-btn {
-      margin-top: 3px !important;
-      font-size: 10px;
+      margin-top: 0.1875rem !important;
+      font-size: 0.625rem;
     }
 
     #carousel-slide1 {
@@ -1620,16 +1622,16 @@ input[type="file"] {
 
     .card-recipe {
       height: auto;
-      padding: 40px;
+      padding: 2.5rem;
     }
 
     .jumbo-h1 {
-      font-size: 20px !important;
+      font-size: 1.25rem !important;
       padding: 0 !important;
     }
 
     .jumbo-p {
-      font-size: 15px !important;
+      font-size: 0.9375rem !important;
     }
 
     .jumbotron.fluid {
@@ -1647,18 +1649,18 @@ input[type="file"] {
     .arvostelu-kentta {
       margin-bottom: 0;
       width: 90%;
-      margin: 5px auto;
+      margin: 0.3125rem auto;
       height: 50vh;
     }
 
     .img-label {
-      right: 10px;
-      top: 103px;
+      right: 0.625rem;
+      top: 6.4375rem;
     }
 
     #add-img-btn {
-      top: 50px;
-      right: 100px;
+      top: 3.125rem;
+      right: 6.25rem;
     }
 
     .up-icon,
@@ -1667,9 +1669,9 @@ input[type="file"] {
       visibility: visible;
       z-index: 5;
       position: fixed;
-      right: 55px;
-      bottom: 60px;
-      font-size: 34px;
+      right: 3.4375rem;
+      bottom: 3.75rem;
+      font-size: 2.125rem;
       opacity: 31%;
       text-decoration: none;
       color: black;
@@ -1678,33 +1680,33 @@ input[type="file"] {
     .content .up-icon,
     .content .up-icon:hover .content .up-icon:visited {
       color: white;
-      right: 20px;
-      bottom: 250px;
+      right: 1.25rem;
+      bottom: 15.625rem;
       opacity: 50%;
     }
 
     .reseptit .carousel-control-prev {
-      left: 70px;
+      left: 4.375rem;
     }
 
     .reseptit .carousel-control-next {
-      right: 70px;
+      right: 4.375rem;
     }
 
     .search-button {
       visibility: visible;
       opacity: 55%;
-      font-size: 25px;
+      font-size: 1.5625rem;
       text-align: center;
-      margin-top: 80px;
+      margin-top: 5rem;
     }
 
     .search-field {
       display: none;
       position: absolute;
-      top: 150px;
-      left: 70px;
-      width: 220px;
+      top: 9.375rem;
+      left: 4.375rem;
+      width: 13.75rem;
       z-index: 50;
       animation: fadeInAnimation ease 0.5s;
       animation-iteration-count: 1;
@@ -1723,18 +1725,18 @@ input[type="file"] {
     #search-btn-submit {
       visibility: hidden;
       position: absolute;
-      right: 45px;
-      top: 132px;
+      right: 2.8125rem;
+      top: 8.25rem;
       z-index: 15;
-      font-size: 10px;
+      font-size: 0.625rem;
       background-color: #2bae66ff;
       opacity: 60%;
-      padding: 10px 14px;
+      padding: 0.625rem 0.875rem;
     }
 
     #search-button {
-      margin-top: 130px;
-      padding: 10px 15px;
+      margin-top: 8.125rem;
+      padding: 0.625rem 0.9375rem;
     }
 
     #search-btn-submit:hover {
@@ -1753,54 +1755,56 @@ input[type="file"] {
   @media screen and (max-height: 720px) {
     .arvostelu-kentta {
       height: 40vh;
-      font-size: 10px;
+      font-size: 0.625rem;
     }
 
     #submit-review-btn {
-      margin-top: 3px !important;
-      font-size: 10px;
+      margin-top: 0.1875rem !important;
+      font-size: 0.625rem;
     }
+  
   }
 
   @media screen and (max-height: 650px) {
     #kirjaudu-sisaan {
-      font-size: 16px !important;
+      font-size: 0.6rem !important;
     }
 
     .button.login {
       position: absolute;
-      left: 150px;
+      left: 2.1875rem;
       height: 50vh;
       position: absolute;
-      top: 100px;
+      top: 6.25rem;
+      margin: auto;
     }
 
     #login-caption {
       position: absolute;
-      font-size: 10px;
+      font-size: 0.625rem;
       width: 90%;
       height: 90%;
     }
 
     .login-input-text {
       height: 7%;
-      margin-top: 10px !important;
-      margin-bottom: 4px;
+      margin-top: 0.625rem !important;
+      margin-bottom: 0.25rem;
       padding: 0;
     }
 
     .login-icon-div {
-      height: 20px;
+      height: 1.25rem;
     }
 
     .login-icon {
-      font-size: 10px;
+      font-size: 0.625rem;
     }
 
     #login-button {
-      margin-top: 6px !important;
-      padding: 5px 15px;
-      font-size: 10px;
+      margin-top: 0.375rem !important;
+      padding: 0.3125rem 0.9375rem;
+      font-size: 0.625rem;
     }
 
     #input-password {
@@ -1815,44 +1819,44 @@ input[type="file"] {
     }
 
     .jumbo-h1 {
-      font-size: 20px !important;
+      font-size: 1.25rem !important;
       padding: 0 !important;
     }
 
     .jumbo-p {
-      font-size: 15px !important;
+      font-size: 0.9375rem !important;
     }
 
     #profile {
-      top: 0px;
+      top: 0rem;
       height: 100%;
       z-index: 50;
     }
 
     .up-icon {
-      bottom: 5px;
+      bottom: 0.3125rem;
     }
     .up-icon:hover {
-      bottom: 5px;
+      bottom: 0.3125rem;
     }
 
     .search-field {
-      top: 10px;
+      top: 0.625rem;
     }
 
     #search-btn-submit {
-      top: -6px;
+      top: -0.375rem;
     }
 
     .arvostelu-kentta {
       height: 60vh;
       width: 90%;
-      margin: 0px auto;
+      margin: 0 auto;
       transform: scale(0.8);
     }
 
     #add-img-btn {
-      top: 20px;
+      top: 1.25rem;
     }
 
     .wrapper .left.arvostelut.active {
@@ -1861,10 +1865,10 @@ input[type="file"] {
 
     #login-caption {
       height: 10%;
-      top: -80px;
+      top: -5rem;
     }
     .button.login {
-      font-size: 10px;
+      font-size: 0.625rem;
     }
   }
 }
@@ -1874,6 +1878,6 @@ input[type="file"] {
     position: absolute;
     width: 80%;
     margin: auto;
-    top: 80px;
+    top: 5rem;
   }
 }
